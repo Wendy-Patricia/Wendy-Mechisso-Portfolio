@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>PortailOps - Wendy Patrícia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header class="nav-wrap">
+        <nav class="nav container">
+            <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+            <button class="menu-toggle" aria-expanded="false">Menu</button>
+            <div class="nav-links">
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#focus">What I Build</a>
+                <a href="../projects.html">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+                <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="case-hero container">
+            <a class="back" href="../projects.html">← All projects</a>
+            <p class="eyebrow">Web Development / Operations Management</p>
+            <h1>PortailOps</h1>
+            <p class="case-lead">
+                An operations management platform for ANETSYS, bringing together customer requests,
+                ticket tracking, and collaboration across internal teams.
+            </p>
+            <div class="tags">
+                <span>Laravel 11</span>
+                <span>Vue.js</span>
+                <span>Inertia.js</span>
+                <span>MySQL</span>
+                <span>Spatie</span>
+            </div>
+        </section>
+
+        <section class="case-visual container">
+            <img src="img/portailops.png" alt="PortailOps interface screenshot" width="" height="520" align="center">
+        </section>
+
+        <section class="case-body container">
+            <aside>
+                <p class="section-label">Case study</p>
+                <span>Full-stack web application</span>
+                <p>ANETSYS · 4 weeks</p>
+            </aside>
+
+            <article>
+                <h2>Overview</h2>
+                <p>
+                    PortailOps is a web platform designed to centralize communication between
+                    ANETSYS customers and teams. Built over four weeks, the MVP covers authentication,
+                    ticket management, subscriptions and offers, as well as tools for support,
+                    sales, and administration teams.
+                </p>
+
+                <h2>Context and goals</h2>
+                <p>
+                    The project aimed to replace several manual processes with a single workspace,
+                    giving customers transparent updates on their requests and teams a clear view
+                    of tickets and workload. The scope and development plan were defined with my
+                    internship supervisor, then refined using team feedback and the company’s
+                    real-world service catalog.
+                </p>
+
+                <h2>My contribution</h2>
+                <p>
+                    I developed the full-stack application independently under the supervision of
+                    my internship supervisor. I set up the architecture, roles, and customer and
+                    internal workflows, then added ANETSYS’s service catalog and official pricing
+                    based on documents provided by the company.
+                </p>
+
+                <h2>Development over four weeks</h2>
+                <p>
+                    <strong>Week 1 - Foundations:</strong> initialized Laravel 11, configured MySQL,
+                    and integrated Laravel Breeze, Vue.js, and Inertia.js. I defined four roles -
+                    administrator, technical support, sales, and customer - with Spatie Permission,
+                    protected routes by role, and set up the Git repository with main and develop
+                    branches.
+                </p>
+                <p>
+                    <strong>Week 2 - Customer portal:</strong> built a personalized dashboard, a ticket
+                    system categorized by service and request type, file attachments, and customer-team
+                    comments. Web incidents are classified as critical, major, or minor, with contractual
+                    resolution times shown; sales requests have dedicated request types. Customers can
+                    also view their subscriptions and available offers.
+                </p>
+                <p>
+                    <strong>Week 3 - Back office:</strong> built a filterable support ticket list and
+                    a Kanban board, with ticket details, assignment, status and priority management,
+                    customer replies, and internal notes. The sales workspace handles sales requests
+                    and manages offers, services, and subscriptions. Administrators have global access
+                    to tickets, accounts, and activity logs. Only administrators can create accounts;
+                    new users receive a temporary password to replace on their first sign-in.
+                </p>
+                <p>
+                    <strong>Week 4 - Consolidation:</strong> added in-app and email notifications for
+                    ticket creation or assignment, status changes, and new comments. A notification
+                    bell with a counter appears in the navigation bar. I also created the public
+                    landing page and custom error pages, and ran end-to-end tests across user flows.
+                </p>
+
+                <h2>Technical approach</h2>
+                <p>
+                    The application uses Laravel 11, Vue.js, and Inertia.js to connect controllers
+                    to reactive views without a separate REST API. MySQL stores data in a relational
+                    database of 22 tables covering users, tickets, comments, attachments, subscriptions,
+                    offers, invoices, notifications, and logs. Spatie Permission manages roles, while
+                    Spatie Activity Log records important actions.
+                </p>
+
+                <h2>Challenges</h2>
+                <p>
+                    The initial MySQL migrations failed with “Specified key was too long.” I resolved
+                    this by setting a 255-character default limit for indexed columns in
+                    AppServiceProvider and applying the same fix to the Spatie Permission migrations.
+                    Learning Vue.js, resolving Inertia component and prop issues, and fixing missing
+                    Eloquent relationships required rapid learning and iterative debugging in the
+                    browser console.
+                </p>
+
+                <h2>Results and impact</h2>
+                <p>
+                    The delivered MVP includes customer, support, sales, and administrator workspaces,
+                    ticket and offer management, automatic notifications, and timestamped logs attributed
+                    to the user who performed each action. One-click assignment and automatic resolution
+                    time calculations reduce manual work; centralization gives teams better visibility
+                    and improves communication between sales and technical departments.
+                </p>
+                <p>
+                    The platform is deployed and used by ANETSYS. The project also includes partial
+                    GDPR measures, including consent and complete data deletion on request, and is
+                    hosted in France by OVH.
+                </p>
+
+                <h2>What I learned</h2>
+                <p>
+                    This internship gave me the opportunity to deliver a full-stack project from
+                    start to finish, quickly improve my skills in Vue.js and Inertia.js, and deepen
+                    my understanding of role management, Eloquent relationships, notifications, and
+                    audit trails. Working with the team also taught me to evolve features in response
+                    to concrete business needs.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+                <p>Computer Science Student · Developer</p>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026</span>
+                <a href="#">Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

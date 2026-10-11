@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Math-Calculation - Wendy Patrícia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+      <button class="menu-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#focus">What I Build</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero container">
+      <a class="back" href="../projects.html">← All projects</a>
+      <p class="eyebrow">Mathematics / Python</p>
+      <h1>Math-Calculation</h1>
+      <p class="case-lead">
+        A collection of mathematical algorithms, including a Python command-line
+        tool for solving linear systems with Gaussian elimination.
+      </p>
+      <div class="tags">
+        <span>Python</span>
+        <span>Linear Algebra</span>
+        <span>Numerical Methods</span>
+      </div>
+    </section>
+
+
+    <section class="case-body container">
+      <aside>
+        <p class="section-label">Case study</p>
+        <span>Mathematics / Python</span>
+      </aside>
+
+      <article>
+        <h2>Overview</h2>
+        <p>
+          Math-Calculation is a collection of mathematical algorithms implemented
+          in Python or R. The repository currently includes a linear algebra
+          program that solves systems of equations using Gaussian elimination.
+        </p>
+
+        <h2>Context</h2>
+        <p>
+          This project is intended for study, practice and reference. The
+          elimination program provides a practical way to follow the row
+          operations used to solve a system of linear equations.
+        </p>
+
+        <h2>Problem</h2>
+        <p>
+          Solving a system by hand involves a sequence of row operations that can
+          be difficult to track. This program accepts the system's coefficients
+          and right-hand-side values, then displays the augmented matrix as the
+          calculation progresses.
+        </p>
+
+        <h2>My contribution</h2>
+        <p>
+          I implemented an interactive command-line program that reads the
+          system size, validates the coefficient rows and right-hand-side
+          values, and prints the resulting solution when the system has a unique
+          solution.
+        </p>
+
+        <h2>Technical approach</h2>
+        <p>
+          The implementation uses partial pivoting to select the largest
+          available pivot in each column. It then normalizes pivot rows and
+          eliminates the corresponding values from the other rows, displaying
+          the augmented matrix after each operation. A numerical tolerance is
+          used when checking for near-zero pivots and values.
+        </p>
+
+        <h2>Challenges</h2>
+        <p>
+          The program needs to handle invalid user input and account for
+          floating-point precision. It also detects when a pivot is too close
+          to zero to proceed with a unique solution.
+        </p>
+
+        <h2>Result</h2>
+        <p>
+          The current implementation solves square systems with a unique
+          solution and prints both the row operations and the final values of
+          the unknowns. Systems without a unique solution are reported as an
+          error.
+        </p>
+
+        <h2>What I learned</h2>
+        <p>
+          This project demonstrates how row operations, partial pivoting and
+          floating-point tolerances can be translated into a step-by-step
+          algorithm, as well as how input validation supports a more reliable
+          command-line tool.
+        </p>
+
+        <div class="case-links">
+          <a href="#" class="project-link" target="_blank" rel="noreferrer">
+            <span class="link-label">GitHub</span>
+            <strong>View repository ↗</strong>
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+        <p>Computer Science Student · Developer</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026</span>
+        <a href="#">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

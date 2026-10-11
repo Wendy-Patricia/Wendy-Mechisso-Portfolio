@@ -1,0 +1,159 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CineVote - Wendy Patrícia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+      <button class="menu-toggle" aria-expanded="false">Menu</button>
+
+      <div class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#focus">What I Build</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="case-hero container">
+      <a class="back" href="../projects.html">← All projects</a>
+      <p class="eyebrow">Cinema / Web Application</p>
+      <h1>CineVote</h1>
+      <p class="case-lead">
+        A role-based cinema platform where users can explore films, contribute
+        new entries, and vote for films, actors, and directors.
+      </p>
+      <div class="tags">
+        <span>PHP</span>
+        <span>Symfony</span>
+        <span>Doctrine</span>
+        <span>Twig</span>
+      </div>
+    </section>
+
+    <section class="case-visual container">
+      <div class="case-placeholder">
+        <span>PROJECT VISUAL</span>
+        <strong>Add a real CineVote screenshot here.</strong>
+        <small>Use an image from the project; no screenshot was provided.</small>
+      </div>
+    </section>
+
+    <section class="case-body container">
+      <aside>
+        <p class="section-label">Case study</p>
+        <span>Cinema / Web Application</span>
+      </aside>
+
+      <article>
+        <h2>Overview</h2>
+        <p>
+          CineVote is a cinema-focused web application for browsing films,
+          actors, and directors. Registered users can take part as electors or
+          candidates, while administrators review community-submitted content.
+        </p>
+
+        <h2>Context</h2>
+        <p>
+          The project brings together a public cinema catalogue and a
+          community-driven participation workflow. Its access is organized
+          around distinct roles for visitors, electors, candidates, and
+          administrators.
+        </p>
+
+        <h2>Problem</h2>
+        <p>
+          A community catalogue needs a way to accept new film and
+          people-related entries without making every submission immediately
+          public. Voting also needs clear eligibility rules and a defined period
+          before results are shown.
+        </p>
+
+        <h2>My contribution</h2>
+        <p>
+          Replace this paragraph with the parts you personally worked on.
+          For example: “I implemented [specific feature or module], including
+          [specific tasks or decisions].” The repository shows the application’s
+          code, but does not identify individual contributions.
+        </p>
+
+        <h2>Technical approach</h2>
+        <p>
+          The application uses Symfony 7 with PHP, Doctrine ORM, and Twig.
+          Controllers handle catalogue, proposal, and voting requests; Doctrine
+          entities model users, films, actors, directors, categories, and votes.
+          Role-based access distinguishes electors, candidates, and
+          administrators.
+        </p>
+        <p>
+          Candidate submissions are stored as pending until an administrator
+          approves or rejects them. Electors can vote once in each of three
+          categories: films, actors, and directors. Results become available
+          after the configured voting end date.
+        </p>
+
+        <h2>Challenges</h2>
+        <p>
+          The implementation has to coordinate permissions with content
+          moderation: candidates can submit entries, but only validated entries
+          appear in the public catalogue. Voting adds another set of rules,
+          including preventing repeat votes per category and withholding results
+          until the voting period has ended.
+        </p>
+
+        <h2>Result</h2>
+        <p>
+          The codebase provides a cinema catalogue with community submissions,
+          administrator moderation, role-restricted voting, and results
+          displayed after the voting period. Add verified deployment details or
+          project outcomes here if you have them.
+        </p>
+
+        <h2>What I learned</h2>
+        <p>
+          Add your own reflection here: which parts of Symfony, Doctrine,
+          access control, moderation workflows, or testing you learned through
+          the project, and what you would approach differently next time.
+        </p>
+
+        <div class="case-links">
+          <a href="https://github.com/Wendy-Patricia/CineVote" class="project-link" target="_blank" rel="noreferrer">
+            <span class="link-label">GitHub</span>
+            <strong>View the repository</strong>
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+        <p>Computer Science Student · Developer</p>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026</span>
+        <a href="#">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

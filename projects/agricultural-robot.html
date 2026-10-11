@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Agricultural Robot - Wendy Patrícia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+      <button class="menu-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#focus">What I Build</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero container">
+      <a class="back" href="../projects.html">← All projects</a>
+      <p class="eyebrow">Robotics / Computer Vision</p>
+      <h1>Agricultural Robot</h1>
+      <p class="case-lead">
+        A robotics project exploring camera-based crop-line following,
+        motor control and the foundations for an agricultural monitoring system.
+      </p>
+      <div class="tags">
+        <span>Python</span>
+        <span>OpenCV</span>
+        <span>Raspberry Pi</span>
+        <span>Robotics</span>
+      </div>
+    </section>
+
+    <section class="case-visual container">
+      <div class="case-placeholder">
+        <img src="img/robot_megan.png" alt="line_following_robot" width="100%" height="520">
+      </div>
+    </section>
+
+    <section class="case-body container">
+      <aside>
+        <p class="section-label">Case study</p>
+        <span>Robotics / Computer Vision</span>
+      </aside>
+
+      <article>
+        <h2>Overview</h2>
+        <p>
+          The project aims to build a robot that follows a crop line, identifies
+          threats along its route and reports useful information to a PC interface.
+          The current code focuses on camera-based line detection and navigation.
+        </p>
+
+        <h2>Context</h2>
+        <p>
+          Developed as a robotics project, the system combines a mobile robot,
+          visual processing and a planned user interface. The exact crop,
+          threat types and elimination method still need to be defined with
+          the project supervisors.
+        </p>
+
+        <h2>Problem</h2>
+        <p>
+          A robot operating along a crop row needs to estimate where the line is
+          in the camera image and adjust its movement accordingly. It also needs
+          a safe response when the line is not detected.
+        </p>
+
+        <h2>My contribution</h2>
+        <p>
+          The current implementation includes Python modules for camera capture,
+          line detection, navigation decisions and motor control. The line detector
+          supports predefined colors and configurable HSV ranges. Update this section
+          to describe your individual contribution and teamwork accurately.
+        </p>
+
+        <h2>Technical approach</h2>
+        <p>
+          OpenCV converts the camera image to HSV and creates a mask for the
+          selected line color. The detector estimates the line's horizontal
+          position and returns a normalized error. Navigation uses that error
+          to request a turn, move forward or stop. Motor control uses PWM through
+          Raspberry Pi GPIO, with reusable channels and a simulated motor
+          implementation for tests.
+        </p>
+
+        <h2>Challenges</h2>
+        <p>
+          The project addresses color-based detection, separating navigation
+          decisions from hardware control, and making the code testable without
+          a camera or physical motors. Reliable HSV thresholds still need to be
+          tuned for the actual camera, lighting and track.
+        </p>
+
+        <h2>Result</h2>
+        <p>
+          Automated tests cover synthetic line images, position estimates,
+          color filtering, navigation commands and simulated PWM behavior.
+          Testing with the physical robot and camera remains a separate step.
+          Threat recognition, the elimination mechanism and PC communication
+          are project goals, not verified features of the current implementation.
+        </p>
+
+        <h2>What I learned</h2>
+        <p>
+          This project provided practical experience with image processing,
+          HSV color ranges, modular Python design, hardware abstraction and
+          testing robotics behavior without activating physical hardware.
+        </p>
+
+        <div class="case-links">
+          <a href="#" class="project-link" target="_blank" rel="noreferrer">
+            <span class="link-label">Project Demo</span>
+            <strong>Add a demo link when available ↗</strong>
+          </a>
+          <a href="https://github.com/Wendy-Patricia/robot-agricole" class="project-link" target="_blank" rel="noreferrer">
+            <span class="link-label">GitHub</span>
+            <strong>View repository ↗</strong>
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+        <p>Computer Science Student · Developer</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026</span>
+        <a href="#">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

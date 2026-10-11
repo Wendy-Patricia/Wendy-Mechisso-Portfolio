@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Traveling Salesman Solver — Wendy Patrícia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+      <button class="menu-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#focus">What I Build</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero container">
+      <a class="back" href="../projects.html">← All projects</a>
+      <p class="eyebrow">Algorithms / Optimization</p>
+      <h1>Traveling Salesman Solver</h1>
+      <p class="case-lead">
+        A C-based project focused on finding the shortest possible route between a set
+        of cities using combinatorial optimization and distance analysis.
+      </p>
+      <div class="tags">
+        <span>C</span>
+        <span>Algorithms</span>
+        <span>Optimization</span>
+        <span>Graph Theory</span>
+      </div>
+    </section>
+
+
+    <section class="case-body container">
+      <aside>
+        <p class="section-label">Case study</p>
+        <span>Computer Science / Algorithms</span>
+      </aside>
+
+      <article>
+        <h2>Overview</h2>
+        <p>
+          This project explores the Traveling Salesman Problem (TSP), one of the most well-known
+          optimization challenges in computer science. The goal is to determine the shortest route
+          that visits each city exactly once and returns to the starting point.
+        </p>
+
+        <h2>Context</h2>
+        <p>
+          The project was developed as part of a first-year university programming assignment in
+          computer science. It combines algorithm design, coordinate generation, Euclidean distance
+          calculation and brute-force optimization in a practical C implementation.
+        </p>
+
+        <h2>Problem</h2>
+        <p>
+          With a set of cities placed on a grid, the challenge is to compute all possible routes,
+          evaluate their total distances and identify the optimal path. Since the number of
+          permutations grows factorially, brute-force becomes heavy as the number of cities increases.
+        </p>
+
+        <h2>My contribution</h2>
+        <p>
+          I implemented the core logic for random point generation, distance matrix creation,
+          exhaustive route checking and route visualization in the console. I also added a
+          nearest-neighbor heuristic and a simplified electric-vehicle simulation to compare
+          different route-planning approaches.
+        </p>
+
+        <h2>Technical approach</h2>
+        <p>
+          The solution generates 8 random, non-overlapping coordinates, computes the Euclidean
+          distance between every pair of points and stores the results in a matrix. Then, it tests
+          all possible city permutations to find the shortest tour. A second heuristic approach
+          approximates a fast path using a nearest-neighbor strategy, while an additional module
+          models a simplified electric trip with charging assumptions.
+        </p>
+
+        <h2>Challenges</h2>
+        <p>
+          One of the main challenges of the project is the factorial growth of the search space.
+          For 8 cities, there are already 40,320 possible routes, which makes exact computation
+          feasible but limited to small instances. The program also had to balance brute-force
+          optimization with readable console output and visual route representation.
+        </p>
+
+        <h2>Result</h2>
+        <p>
+          The project successfully demonstrates how algorithmic thinking can be applied to a real
+          optimization problem in C. It displays the generated points, the distance matrix, the
+          optimal route, and a heuristic comparison. The project is a strong example of
+          algorithmic problem solving and early-stage software experimentation.
+        </p>
+
+        <h2>What I learned</h2>
+        <p>
+          This project strengthened my understanding of algorithm complexity, optimization
+          strategies, and practical C programming. It also showed me how important it is to choose
+          between exact solutions and heuristic methods depending on the size of the problem.
+        </p>
+
+        <div class="case-links">
+          <a href="https://github.com/Wendy-Patricia/traveling-salesman" class="project-link" target="_blank" rel="noreferrer">
+            <span class="link-label">GitHub</span>
+            <strong>View repository ↗</strong>
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+        <p>Computer Science Student · Developer</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026</span>
+        <a href="#">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

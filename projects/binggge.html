@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Binggge - Wendy Patrícia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+      <button class="menu-toggle" aria-expanded="false">Menu</button>
+
+      <div class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#focus">What I Build</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero container">
+      <a class="back" href="../projects.html">Back to all projects</a>
+      <p class="eyebrow">Entertainment / Web Application</p>
+      <h1>Binggge</h1>
+      <p class="case-lead">
+        A web application for discovering TV shows and building a personal
+        watchlist, powered by TVMaze and PostgreSQL.
+      </p>
+      <div class="tags">
+        <span>JavaScript</span>
+        <span>Node.js</span>
+        <span>Express</span>
+        <span>PostgreSQL</span>
+        <span>Vite</span>
+      </div>
+    </section>
+
+    <section class="case-visual container">
+      <div class="case-placeholder">
+        <img src="img/binggee.png" alt="Binggee interface screenshot" width="100%" height="520">
+      </div>
+    </section>
+
+    <section class="case-body container">
+      <aside>
+        <p class="section-label">Case study</p>
+        <span>Entertainment / Web</span>
+      </aside>
+
+      <article>
+        <h2>Overview</h2>
+        <p>
+          Binggge helps users search for TV shows and save titles to a
+          personal watchlist. The project combines a JavaScript frontend,
+          a Node.js and Express API, PostgreSQL persistence, and show data
+          from TVMaze.
+        </p>
+
+        <h2>Context</h2>
+        <p>
+          Binggge is a personal web application developed incrementally.
+          It brings show discovery and watchlist management together in
+          one place.
+        </p>
+
+        <h2>Problem</h2>
+        <p>
+          Finding a show is only part of the experience. Users also need a
+          simple way to keep track of titles they want to watch and retrieve
+          their list later.
+        </p>
+
+        <h2>My contribution</h2>
+        <p>
+          I built the web interface and connected it to the application API.
+          The interface supports show search, paginated catalog results,
+          user registration, and adding titles to a personal watchlist.
+        </p>
+
+        <h2>Technical approach</h2>
+        <p>
+          The frontend uses JavaScript and Vite. Vite proxies API requests
+          to a Node.js and Express backend. The API searches TVMaze and uses
+          PostgreSQL to store users and their watchlist entries.
+        </p>
+        <p>
+          Catalog pagination is handled in the frontend, showing six search
+          results per page. Search starts empty and runs when the user submits
+          a query.
+        </p>
+
+        <h2>Challenges</h2>
+        <p>
+          Connecting the frontend to the API required coordinating local
+          development across separate servers. The watchlist also needs to
+          be associated with the correct user when retrieving saved shows.
+        </p>
+
+        <h2>Result</h2>
+        <p>
+          The current development version supports show discovery and
+          watchlist creation. Authentication is simplified and uses an
+          <code>X-User</code> request header; it does not yet use passwords,
+          sessions, or tokens.
+        </p>
+
+        <h2>What I learned</h2>
+        <p>
+          This project gave me practical experience connecting a frontend
+          to a REST API, working with PostgreSQL, integrating an external
+          data source, and handling user-specific data.
+        </p>
+
+
+          <a href="https://gitlab.univ-lorraine.fr/e41813u/binggge" class="project-link" target="_blank" rel="noreferrer">
+            <span class="link-label">GitHub</span>
+            <strong>View the repository</strong>
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+        <p>Computer Science Student · Developer</p>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026</span>
+        <a href="#">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

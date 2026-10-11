@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Scène Maritime - Wendy Patrícia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+      <button class="menu-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#focus">What I Build</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero container">
+      <a class="back" href="../projects.html">← All projects</a>
+      <p class="eyebrow">3D / WebGL</p>
+      <h1>Scène Maritime</h1>
+      <p class="case-lead">
+        An interactive Three.js scene that recreates three sailboats crossing
+        a reflective ocean at sunset.
+      </p>
+      <div class="tags">
+        <span>Three.js</span>
+        <span>WebGL</span>
+        <span>GLSL</span>
+        <span>3D Graphics</span>
+      </div>
+    </section>
+
+    <section class="case-visual container">
+      <div class="case-placeholder">
+        <section class="case-visual container">
+          <div class="case-placeholder">
+            <img src="img/3d_interaction.png" alt="3D Interaction" width="100%" height="520">
+          </div>
+        </section>
+    </section>
+
+    <section class="case-body container">
+      <aside>
+        <p class="section-label">Case study</p>
+        <span>3D / WebGL</span>
+      </aside>
+
+      <article>
+        <h2>Overview</h2>
+        <p>
+          Scène Maritime is an interactive 3D project built with Three.js and
+          WebGL. It depicts three sailboats on a reflective ocean beneath a
+          warm sunset, with orbit controls and real-time scene adjustments.
+        </p>
+
+        <h2>Context</h2>
+        <p>
+          Created for the 3D Modeling course at IUT Saint-Dié during the
+          2025–2026 academic year, the project was inspired by a watercolor
+          painting of sailboats heading toward a vivid sunset.
+        </p>
+
+        <h2>Problem</h2>
+        <p>
+          The challenge was to translate the painting's lighting, reflections,
+          atmospheric depth and sense of movement into a real-time 3D scene
+          that viewers could explore and interact with.
+        </p>
+
+
+        <h2>Technical approach</h2>
+        <p>
+          The scene combines Three.js components including Sky, Water,
+          Reflector and OrbitControls. A custom GLSL shader distorts the water
+          reflection, while animated cloud sprites and particle-based fog add
+          movement and atmospheric depth.
+        </p>
+        <p>
+          The boats use textured materials with normal and specular maps.
+          Directional lighting and soft shadow maps create the sunset
+          illumination. A control panel lets viewers move and reset the boats,
+          adjust fog density, and change the opacity of hulls and sails.
+        </p>
+
+        <h2>Challenges</h2>
+        <p>
+          The project brings together several rendering techniques that need
+          to work in the same scene: the animated water surface, a custom
+          reflective shader, atmospheric fog, shadows and interactive boat
+          movement. Keeping the scene adjustable while preserving the sunset
+          mood was also an important part of the implementation.
+        </p>
+
+        <h2>Result</h2>
+        <p>
+          The result is an explorable sunset scene featuring three movable
+          sailboats, animated clouds, adjustable fog and boat transparency,
+          soft shadows and a distorted reflection on the water.
+        </p>
+
+        <h2>What I learned</h2>
+        <p>
+          The project provided practical experience with Three.js scene
+          composition, WebGL materials, texture maps, GLSL shader
+          customization, raycasting and real-time interaction controls.
+        </p>
+        <div class="case-links">
+          <a href="https://project-webgl.vercel.app/" class="project-link" target="_blank" rel="noreferrer">
+            <span class="link-label">Live site</span>
+            <strong>View the website</strong>
+          </a>
+
+          <a href="https://github.com/Wendy-Patricia/Project-webgl" class="project-link" target="_blank" rel="noreferrer">
+            <span class="link-label">GitHub</span>
+            <strong>View the repository</strong>
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+        <p>Computer Science Student · Developer</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026</span>
+        <a href="#">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
