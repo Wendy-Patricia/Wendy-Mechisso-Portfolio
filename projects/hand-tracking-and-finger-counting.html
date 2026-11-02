@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hand Tracking and Finger Counting - Wendy Patrícia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+      <button class="menu-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#focus">What I Build</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero container">
+      <a class="back" href="../projects.html">← All projects</a>
+      <p class="eyebrow">Robotics / Computer Vision</p>
+      <h1>Hand Tracking and Finger Counting</h1>
+      <p class="case-lead">
+        A real-time hand-tracking and finger-counting application built with Python, OpenCV, and NumPy. It processes
+        webcam images to identify a hand silhouette, count between zero and five raised fingers, and display an
+        estimated hand skeleton.
+      </p>
+      <div class="tags">
+        <span>Python</span>
+        <span>OpenCV</span>
+        <span>NumPy</span>
+      </div>
+    </section>
+
+    <section class="case-visual container">
+      <div class="case-placeholder">
+        <img src="img/hand_tracking_counting_finger.png" alt="line_following_robot" width="100%" height="520">
+      </div>
+    </section>
+
+    <section class="case-body container">
+      <aside>
+        <p class="section-label">Case study</p>
+        <span>Computer Vision</span>
+      </aside>
+
+      <article>
+        <h2> Overview</h2>
+        <p>
+
+          A real-time hand-tracking and finger-counting application built with Python, OpenCV, and NumPy. It processes
+          webcam images to identify a hand silhouette, count between zero and five raised fingers, and display an
+          estimated hand skeleton.
+        </p>
+
+        <h2>Context</h2>
+        <p>
+
+          This project explores how traditional computer vision can support gesture-based interaction. It uses image
+          processing and geometric analysis without neural networks, pretrained models, or MediaPipe. All images are
+          processed locally.
+        </p>
+
+        <h2>Problem</h2>
+        <p>
+
+          The main challenge was to turn a webcam image into a stable finger count. Lighting, background colours, hand
+          size, and finger position can affect detection. The system also needed to distinguish a closed fist from an
+          open hand and recognise a thumb extended sideways.
+        </p>
+
+        <h2>My contribution</h2>
+        <p>
+          I developed the processing pipeline, from webcam capture and hand segmentation to finger counting and visual
+          feedback. I added interactive controls for adjusting detection parameters, temporal filtering to stabilise the
+          count, and automated tests using synthetic hand silhouettes. I also organised the code into separate modules
+          for processing, geometry, controls, and visualisation.
+        </p>
+
+        <h2>Technical approach</h2>
+        <p>
+          I converted each frame to HSV and applied adjustable colour thresholds to isolate the hand. Gaussian blur and
+          morphological operations helped clean the binary mask before selecting the largest valid contour.</p>
+
+        <p>
+          I estimated the palm centre and radius using a distance transform. After resampling and smoothing the
+          contour, I detected fingertip candidates through their distance from the palm, prominence, and local
+          curvature. Convexity defects helped locate the gaps between fingers.</p>
+
+        <p>
+          To reduce flickering, I stabilised the count through a vote over the last seven frames, requiring four
+          matching observations to validate a new count.
+        </p>
+
+        <h2>Challenges</h2>
+        <p>
+          The main challenges were handling changing lighting, preventing the forearm from distorting palm estimation,
+          and recognising lateral thumbs. I addressed these through adjustable HSV controls, palm-relative geometric
+          thresholds, and candidate filtering. I also made uncertain results expire so the application would not keep
+          displaying an outdated count.
+        </p>
+
+        <h2>Result</h2>
+        <p>
+          The application supports webcam processing, silhouette analysis from image files, and visual overlays showing
+          fingertips, finger gaps, and an estimated skeleton. The project includes 16 automated tests covering synthetic
+          finger combinations, mirrored silhouettes, changes in scale, limited rotations, and temporal stabilisation.
+        </p>
+
+        <p>
+          Real-world accuracy has not been quantified. Performance depends on segmentation quality, visible fingers, and
+          a palm-facing hand position.
+        </p>
+
+        <h2>What I learned</h2>
+        <p>
+          I learned how to combine colour segmentation, contour analysis, and temporal filtering into a complete
+          computer vision pipeline. The project strengthened my understanding of geometric feature detection, modular
+          Python development, and testing without physical camera hardware. It also showed me how strongly input quality
+          affects the reliability of a vision system.
+        </p>
+
+        <div class="case-links">
+          <a href="https://github.com/Wendy-Patricia/hand-tracking-and-finger-counting" class="project-link" target="_blank"
+            rel="noreferrer">
+            <span class="link-label">GitHub</span>
+            <strong>View repository ↗</strong>
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+        <p>Computer Science Student · Developer</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026</span>
+        <a href="#">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

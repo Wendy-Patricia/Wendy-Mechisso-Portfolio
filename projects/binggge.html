@@ -62,10 +62,9 @@
       <article>
         <h2>Overview</h2>
         <p>
-          Binggge helps users search for TV shows and save titles to a
-          personal watchlist. The project combines a JavaScript frontend,
-          a Node.js and Express API, PostgreSQL persistence, and show data
-          from TVMaze.
+          Binggge is a responsive TV series tracking application built with JavaScript, Vite and CSS, supported by an
+          Express API and PostgreSQL database. Users can search for series through TVMaze, explore synopses and episodes
+          organised by season, and manage a private watchlist. The interface is in French.
         </p>
 
         <h2>Context</h2>
@@ -84,16 +83,28 @@
 
         <h2>My contribution</h2>
         <p>
-          I built the web interface and connected it to the application API.
-          The interface supports show search, paginated catalog results,
-          user registration, and adding titles to a personal watchlist.
+          I developed and integrated the frontend and backend features, including series search, clickable cards,
+          synopses, episodes organised by season, and personal watchlists. I replaced username-only identification with
+          password-based authentication and secure sessions, improved accessibility and error handling, and added
+          automated tests.
+
+          I also refined the GitLab CI pipeline and configured deployment with Docker and PostgreSQL, troubleshooting
+          database initialisation, credentials and API routing.
         </p>
 
         <h2>Technical approach</h2>
         <p>
-          The frontend uses JavaScript and Vite. Vite proxies API requests
-          to a Node.js and Express backend. The API searches TVMaze and uses
-          PostgreSQL to store users and their watchlist entries.
+          I kept the frontend lightweight with vanilla JavaScript, Vite and CSS, separating API requests, state, views,
+          search and focus management into small modules. Search uses debounce and request cancellation to prevent
+          outdated results. </p>
+
+        <p>The Express API connects to TVMaze for series and episode information and PostgreSQL for accounts, sessions
+          and watchlists. Passwords are protected with salted scrypt hashes, while sessions use HTTP-only cookies.
+          Private database queries are scoped to the authenticated user. </p>
+
+        <p> used semantic HTML, keyboard navigation, focus management and accessible status messages throughout the
+          interface. Testing combines isolated API tests, frontend tests and focused Playwright flows. Docker handles
+          compilation and deployment, with GitLab CI running automated checks.
         </p>
         <p>
           Catalog pagination is handled in the frontend, showing six search
@@ -103,28 +114,36 @@
 
         <h2>Challenges</h2>
         <p>
-          Connecting the frontend to the API required coordinating local
-          development across separate servers. The watchlist also needs to
-          be associated with the correct user when retrieving saved shows.
+          The main challenges were replacing username-only identification with secure authentication, ensuring each
+          account could access only its own watchlist, and handling loading states and API failures clearly. Other
+          challenges included preventing outdated search results, making clickable cards and modals accessible,
+          simplifying CI tests, and resolving database configuration issues during deployment.
+
         </p>
 
         <h2>Result</h2>
         <p>
-          The current development version supports show discovery and
-          watchlist creation. Authentication is simplified and uses an
-          <code>X-User</code> request header; it does not yet use passwords,
-          sessions, or tokens.
+          The application now supports password-based registration, login and logout, private watchlists, watched-status
+          filters, series details and episode synopses. Search uses debounce and protection against outdated responses.
+          Automated API, frontend and browser tests cover the main flows, while Docker provides a consistent build and
+          deployment process.
         </p>
 
         <h2>What I learned</h2>
         <p>
-          This project gave me practical experience connecting a frontend
-          to a REST API, working with PostgreSQL, integrating an external
-          data source, and handling user-specific data.
+
+          I learned how to connect frontend behaviour with backend security, protect passwords using salted hashes, and
+          manage sessions through HTTP-only cookies. I also developed practical experience with accessible interfaces,
+          asynchronous requests, isolated testing, GitLab CI and Docker deployment. Troubleshooting the server taught me
+          that rebuilding containers does not automatically update database schemas or stored credentials.
         </p>
 
-
-          <a href="https://gitlab.univ-lorraine.fr/e41813u/binggge" class="project-link" target="_blank" rel="noreferrer">
+        <div class="case-links">
+          <a href="https://iut.cafeclaudie.fr/e41813u/" class="project-link" target="_blank" rel="noreferrer">
+            <span class="link-label">Project Demo</span>
+          </a>
+          <a href="https://gitlab.univ-lorraine.fr/e41813u/binggge" class="project-link" target="_blank"
+            rel="noreferrer">
             <span class="link-label">GitHub</span>
             <strong>View the repository</strong>
           </a>
