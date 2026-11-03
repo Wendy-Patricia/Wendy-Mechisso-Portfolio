@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Binggge - Wendy Patrícia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+      <button class="menu-toggle" aria-expanded="false">Menu</button>
+
+      <div class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#focus">What I Build</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero container">
+      <a class="back" href="../projects.html">Back to all projects</a>
+      <p class="eyebrow">Entertainment / Web Application</p>
+      <h1>Pastel Player</h1>
+      <p class="case-lead">
+        A Spotify desktop player for Windows, built with Electron, React, and TypeScript.
+      </p>
+      <div class="tags">
+        <span>JavaScript</span>
+        <span>Node.js</span>
+        <span>Express</span>
+        <span>PostgreSQL</span>
+        <span>Vite</span>
+      </div>
+    </section>
+
+    <section class="case-visual container">
+      <div class="case-placeholder">
+        <img src="img/pastel_player.png" alt="Pastel Player interface screenshot" width="100%" height="520">
+      </div>
+    </section>
+
+    <section class="case-body container">
+      <aside>
+        <p class="section-label">Case study</p>
+        <span>Entertainment / Web</span>
+      </aside>
+
+      <article>
+        <h2>Overview</h2>
+        <p>
+          A Spotify desktop player for Windows, built with Electron, React, and TypeScript, featuring a custom pastel
+          interface and integrated music playback.
+        </p>
+
+        <h2>Context</h2>
+        <p>
+          A personal project combining desktop application development, interface design, and integration with Spotify’s
+          authentication and playback services.
+        </p>
+
+        <h2>Problem</h2>
+        <p>
+          Create a desktop listening experience that plays music within the application without requiring the official
+          Spotify Desktop app to remain open.
+        </p>
+
+        <h2>My contribution</h2>
+        <p>
+          I developed the responsive interface, integrated Spotify authentication and playlist loading, implemented
+          playback controls, and configured secure communication between Electron and React. I also added automated
+          tests and a Windows desktop shortcut
+        </p>
+
+        <h2>Technical Approach</h2>
+
+        <ul>
+          <li>Built reusable React components with TypeScript.</li>
+          <li>Used OAuth 2.0 with PKCE and encrypted storage for refresh tokens.</li>
+          <li>Integrated the Spotify Web API and Web Playback SDK.</li>
+          <li>Secured Electron with context isolation, sandboxing, and validated IPC methods.</li>
+          <li>Used a Widevine-enabled Electron runtime for protected audio playback.</li>
+        </ul>
+        <h2>Challenges</h2>
+        <p>
+          Handling DRM requirements and VMP signing, keeping playback controls synchronized with Spotify, and correctly
+          processing API responses that contained empty bodies or plain text instead of JSON.
+
+
+        </p>
+
+        <h2>Result</h2>
+        <p>
+          Delivered a working desktop player with automatic playlist loading, album artwork, playback navigation,
+          seeking, volume, shuffle, and repeat controls. Added loading and error states, responsive layouts, and 39
+          passing automated tests.
+        </p>
+
+        <h2>What I learned</h2>
+        <p>
+
+          I learned how to connect frontend behaviour with backend security, protect passwords using salted hashes, and
+          manage sessions through HTTP-only cookies. I also developed practical experience with accessible interfaces,
+          asynchronous requests, isolated testing, GitLab CI and Docker deployment. Troubleshooting the server taught me
+          that rebuilding containers does not automatically update database schemas or stored credentials.
+        </p>
+
+        <div class="case-links">
+          <a href="https://iut.cafeclaudie.fr/e41813u/" class="project-link" target="_blank" rel="noreferrer">
+            <span class="link-label">Project Demo</span>
+            <strong>View the demo</strong>
+          </a>
+          <a href="https://gitlab.univ-lorraine.fr/e41813u/binggge" class="project-link" target="_blank"
+            rel="noreferrer">
+            <span class="link-label">GitHub</span>
+            <strong>View the repository</strong>
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+        <p>Computer Science Student · Developer</p>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026</span>
+        <a href="#">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
