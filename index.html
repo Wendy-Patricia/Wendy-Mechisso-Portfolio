@@ -22,8 +22,8 @@
       <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
       <div id="menu" class="nav-links">
         <a href="#about">About</a>
+        <a href="projects.html">Projects</a>
         <a href="#focus">What I Build</a>
-        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact" class="nav-cta">Let's Talk</a>
       </div>
@@ -38,7 +38,7 @@
         <p class="hero-lead">A technical space for the things I build, the problems I investigate, and the technologies
           I'm learning along the way.</p>
         <div class="actions">
-          <a class="button primary" href="#projects">View projects <span>↘</span></a>
+          <a class="button primary" href="projects.html">View projects <span>↘</span></a>
           <a class="text-link" href="#contact">Contact me →</a>
         </div>
       </div>
@@ -66,6 +66,11 @@
       <div>
         <p class="section-label">01 / About me</p>
         <h2>Building with curiosity,<br><em>learning through every project.</em></h2>
+        <figure class="profile-photo">
+          <img src="assets/Wendy.JPG" alt="Portrait of Wendy Patrícia" width="320" height="360"
+            loading="lazy">
+          <figcaption>Wendy Patrícia <span>Computer Science Student · Developer</span></figcaption>
+        </figure>
       </div>
       <div class="section-copy">
         <p>I’m Wendy Patrícia, a third-year BUT Informatique student at Université de Lorraine in France.</p>
@@ -81,11 +86,23 @@
       </div>
     </section>
 
+    <section id="projects" class="section container projects-section" aria-labelledby="projects-title">
+      <div class="projects-overview">
+        <div>
+          <p class="section-label">02 / Projects</p>
+          <h2 id="projects-title">Explore my projects</h2>
+          <p>See what I've built across software, web development, robotics and systems. Browse all projects, filter by
+            area and explore the details of each one.</p>
+        </div>
+        <a class="button primary" href="projects.html">View all projects <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </section>
+
     <section id="focus" class="section focus-section">
       <div class="container">
         <div class="section-intro">
           <div>
-            <p class="section-label">02 / Areas of focus</p>
+            <p class="section-label">03 / Areas of focus</p>
             <h2>What I Build</h2>
           </div>
           <p>A look at the areas and technologies I explore through coursework, projects and experimentation.</p>
@@ -121,105 +138,6 @@
           </article>
         </div>
       </div>
-    </section>
-
-    <section id="projects" class="section container projects-section">
-      <div class="section-intro">
-        <div>
-          <p class="section-label">03 / Selected work</p>
-          <h2>Projects</h2>
-        </div>
-        <p>A selection of things I've built while exploring software, databases, web development, robotics, systems and
-          interactive technologies.</p>
-      </div>
-
-      <div class="project-list">
-
-        <article class="project-row reverse">
-          <div class="project-visual visual-web"><span>OPERATIONS PORTAL</span>
-            <div class="terminal-mark">OPS</div>
-          </div>
-          <div class="project-info"><span class="project-type">01 - Web Application</span>
-            <h3>PortailOps</h3>
-            <p>A full-stack operations portal for ANETSYS, centralizing customer support tickets, subscriptions, service
-              offers and internal team workflows.</p>
-            <div class="tags"><span>Laravel 11</span><span>Vue.js</span><span>Inertia.js</span><span>MySQL</span></div>
-            <div class="project-actions"><a href="projects/Portailops.html">View project →</a></div>
-          </div>
-        </article>
-
-        <article class="project-row reverse">
-          <div class="project-visual visual-cinema"><span>WEB PROJECT</span>
-            <div class="film-mark">24</div>
-          </div>
-          <div class="project-info"><span class="project-type">02 - Interactive</span>
-            <h3>CineVote</h3>
-            <p>A cinema-oriented project exploring interactive web functionality and user choices.</p>
-            <div class="tags"><span>Web</span><span>JavaScript</span></div>
-            <div class="project-actions"><a href="projects/cinevote.html">View project →</a><a
-                href="https://github.com/Wendy-Patricia/CineVote">GitHub ↗</a></div>
-          </div>
-        </article>
-
-        <article class="project-row">
-          <div class="project-visual visual-robot"><span>ROBOTICS</span>
-            <div class="pixel-robot">▦</div>
-          </div>
-          <div class="project-info"><span class="project-type">03 - Robotics</span>
-            <h3>Agricultural Robot</h3>
-            <p>A robotics project involving crop-line following, camera-based detection and interaction with its
-              environment.</p>
-            <div class="tags"><span>Python</span><span>OpenCV</span><span>Raspberry Pi</span></div>
-            <div class="project-actions"><a href="projects/agricultural-robot.html">View project →</a><a
-                href="https://github.com/Wendy-Patricia/robot-agricole">GitHub ↗</a></div>
-          </div>
-        </article>
-
-        <article class="project-row reverse">
-          <div class="project-visual visual-web"><span>WEB APPLICATION</span>
-            <div class="terminal-mark">&gt;_</div>
-          </div>
-          <div class="project-info"><span class="project-type">04 - Web</span>
-            <h3>Binggge</h3>
-            <p>A web application project combining a frontend, API and database-oriented architecture.</p>
-            <div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Docker</span></div>
-            <div class="project-actions"><a href="projects/binggge.html">View project →</a><a
-                href="https://iut.cafeclaudie.fr/e41813u/">Live Site ↗</a><a
-                href="https://github.com/Wendy-Patricia/binggge">GitHub ↗</a></div>
-          </div>
-        </article>
-
-        <article class="project-row reverse">
-          <div class="project-visual visual-3d"><span>3D / WEBGL</span>
-            <div class="cube">◇</div>
-          </div>
-          <div class="project-info"><span class="project-type">05 - 3D</span>
-            <h3>Three.js 3D Reconstruction</h3>
-            <p>An interactive Three.js project exploring the reconstruction and visualization of a real-world object.
-            </p>
-            <div class="tags"><span>Three.js</span><span>WebGL</span><span>JavaScript</span></div>
-            <div class="project-actions"><a href="projects/threejs-3d-reconstruction.html">View project →</a><a
-                href="https://project-webgl.vercel.app/">Live Site ↗</a><a
-                href="https://github.com/Wendy-Patricia/Project-webgl">GitHub ↗</a></div>
-          </div>
-        </article>
-        <article class="project-row reverse">
-          <div class="project-visual visual-web"><span>WEB</span>
-            <div class="terminal-mark">&gt;_</div>
-          </div>
-          <div class="project-info"><span class="project-type">06 - Web</span>
-            <h3>Agulha d'ouro</h3>
-            <p>A corporate website developed for Atelier Agulha D'Ouro, a fashion atelier specializing in haute couture,
-              bridal gowns, and custom-made garments.</p>
-            <div class="tags"><span>Web</span><span>React</span><span>Next.js</span></div>
-            <div class="project-actions"><a href="projects/Agulha_douro.html">View project →</a><a
-                href="https://atelieragulhadouro.com/">Live Site ↗</a><a
-                href="https://github.com/Wendy-Patricia/Agulha_douro_site_vitrine">GitHub ↗</a></div>
-          </div>
-        </article>
-
-      </div>
-      <div class="center-action"><a class="button outline" href="projects.html">View all projects →</a></div>
     </section>
 
     <section id="skills" class="section skills-section">

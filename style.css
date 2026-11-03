@@ -230,6 +230,33 @@ h2 em {
   color: #4e4b46;
   font-size: 1.05rem;
 }
+.profile-photo {
+  width: min(100%, 320px);
+  margin: 32px 0 0;
+  border: 1px solid var(--line);
+  background: var(--white);
+  box-shadow: 8px 8px 0 var(--pink);
+}
+.profile-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+.profile-photo figcaption {
+  padding: 16px 18px;
+  border-top: 1px solid var(--line);
+  font-weight: 600;
+}
+.profile-photo figcaption span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
 .section-copy p {
   margin-top: 0;
   margin-bottom: 22px;
@@ -298,6 +325,30 @@ h2 em {
 }
 .project-list {
   border-top: 1px solid var(--line);
+}
+.projects-section {
+  padding-top: 0;
+}
+.projects-overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  box-shadow: 8px 8px 0 var(--pink);
+}
+.projects-overview h2 {
+  font-size: clamp(2.4rem, 4vw, 4rem);
+}
+.projects-overview p:last-child {
+  max-width: 600px;
+  margin-bottom: 0;
+  color: var(--muted);
+}
+.projects-overview .button {
+  flex-shrink: 0;
 }
 .project-row {
   display: grid;
@@ -744,6 +795,15 @@ h2 em {
   }
   .section {
     padding: 85px 0;
+  }
+  .projects-section {
+    padding-top: 0;
+  }
+  .projects-overview {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 28px 22px;
   }
   .split,
   .contact-section {
