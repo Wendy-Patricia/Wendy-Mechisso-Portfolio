@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Agulha d'ouro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header class="nav-wrap">
+        <nav class="nav container">
+            <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+            <button class="menu-toggle" aria-expanded="false">Menu</button>
+
+            <div class="nav-links">
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#focus">What I Build</a>
+                <a href="../projects.html">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+                <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="case-hero container">
+            <a class="back" href="../projects.html">Back to all projects</a>
+            <p class="eyebrow"></p>
+            <h1>Agulha d'ouro</h1>
+            <p class="case-lead">
+                A corporate website developed for Atelier Agulha D'Ouro, a fashion atelier
+                specializing in haute couture, bridal gowns, and custom-made garments.
+            </p>
+            <div class="tags">
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>PostgreSQL</span>
+                <span>Vite</span>
+            </div>
+        </section>
+
+        <section class="case-visual container">
+            <div class="case-placeholder">
+                <img src="img/agulha-douro.png" alt="Agulha d'ouro interface screenshot" width="100%" height="520">
+            </div>
+        </section>
+
+        <section class="case-body container">
+            <aside>
+                <p class="section-label">Case study</p>
+                <span>Fashion / Web</span>
+            </aside>
+
+            <article>
+                <h2>Overview</h2>
+                <p>
+                    Concert Ticketing System - Encore is a web application for browsing concerts, purchasing tickets,
+                    and managing events. It combines a searchable catalogue, customer registration, and a loyalty
+                    programme offering a 10% discount.
+                </p>
+
+                <h2>Context</h2>
+                <p>
+                    The project was developed in a team of two. Responsibilities were divided between the concert
+                    catalogue, infrastructure, and security, and the customer, loyalty, and purchasing modules. Both
+                    parts were integrated into a single application with a Java backend and a Portuguese interface.
+                </p>
+
+                <h2>Problem</h2>
+                <p>
+
+                    The goal was to centralise information about artists, venues, and concerts while providing a
+                    reliable ticket purchasing process. The application needed to validate data, enforce access
+                    permissions, calculate prices, and prevent purchases exceeding venue capacity.
+                </p>
+
+                <h2>My contribution</h2>
+                <p>
+                    My contribution focused on the concert catalogue, infrastructure, and security. I worked on
+                    modelling artists, venues, and concerts, implementing REST endpoints, and configuring role-based
+                    permissions. I also contributed to database migrations, API documentation, and catalogue tests.
+                </p>
+
+                <h2>Technical approach</h2>
+                <p>
+                    The backend uses Java 25 and Spring Boot, with separate controller, service, and repository layers.
+                    Spring Data JPA and MySQL handle persistence, while Flyway manages versioned database migrations.
+                </p>
+                <p>
+
+                    Spring Security controls access through CLIENT, PRODUCTEUR, and ADMIN roles. The API is documented
+                    with Swagger/OpenAPI, and MySQL runs through Docker Compose. The HTML, CSS, and JavaScript frontend
+                    communicates directly with the backend
+                </p>
+
+                <h2>Challenges</h2>
+                <p>
+                    A key challenge was integrating both modules while keeping entities, API contracts, and database
+                    migrations consistent. Another was maintaining accurate ticket availability during simultaneous
+                    purchases, using database transactions and locking.</p>
+                <p>
+                    The project also required consistent validation across the application and database, alongside clear
+                    error messages in the interface.
+
+                </p>
+
+                <h2>Result</h2>
+                <p>
+                    The resulting application supports concert searches, customer registration, loyalty card activation,
+                    and purchases of one to six tickets. It also includes role-protected management features and
+                    automated tests covering business rules, security, persistence, and concurrent purchases.
+
+                </p>
+
+                <div class="case-links">
+                    <a href="https://atelieragulhadouro.com/" class="project-link" target="_blank" rel="noreferrer">
+                        <span class="link-label">Live site</span>
+                        <strong>View the website</strong>
+                    </a>
+
+                    <a href="https://github.com/Wendy-Patricia/concert-ticketing-system" class="project-link"
+                        target="_blank" rel="noreferrer">
+                        <span class="link-label">GitHub</span>
+                        <strong>View the repository</strong>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+                <p>Computer Science Student · Developer</p>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026</span>
+                <a href="#">Back to top</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
