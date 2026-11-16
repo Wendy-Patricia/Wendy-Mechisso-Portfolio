@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Agricultural Robot - Wendy Patrícia</title>
+  <title>Robot agricole - Wendy Patrícia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -15,113 +15,89 @@
       <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
       <button class="menu-toggle" aria-expanded="false">Menu</button>
       <div class="nav-links">
-        <a href="../index.html#about">About</a>
-        <a href="../index.html#focus">What I Build</a>
-        <a href="../projects.html">Projects</a>
-        <a href="../index.html#skills">Skills</a>
-        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+        <a href="../index.html#about">À propos</a>
+        <a href="../index.html#focus">Mes réalisations</a>
+        <a href="../projects.html">Projets</a>
+        <a href="../index.html#skills">Compétences</a>
+        <a href="../index.html#contact" class="nav-cta">Discutons</a>
       </div>
+      <button class="language-toggle" type="button" lang="en" aria-label="Switch to English" title="Switch to English">EN</button>
     </nav>
   </header>
 
   <main>
     <section class="case-hero container">
-      <a class="back" href="../projects.html">← All projects</a>
-      <p class="eyebrow">Robotics / Computer Vision</p>
-      <h1>Agricultural Robot</h1>
+      <a class="back" href="../projects.html">← Tous les projets</a>
+      <p class="eyebrow">Robotique / Vision par ordinateur</p>
+      <h1>Robot agricole</h1>
       <p class="case-lead">
-        A robotics project exploring camera-based crop-line following,
-        motor control and the foundations for an agricultural monitoring system.
+        Un projet de robotique explorant le suivi de rangs de culture par caméra, la commande des moteurs et les bases d’un système de surveillance agricole.
       </p>
       <div class="tags">
         <span>Python</span>
         <span>OpenCV</span>
         <span>Raspberry Pi</span>
-        <span>Robotics</span>
+        <span>Robotique</span>
       </div>
     </section>
 
     <section class="case-visual container">
       <div class="case-placeholder">
-        <img src="img/robot_megan.png" alt="line_following_robot" width="100%" height="520">
+        <img src="img/robot_megan.png" alt="Robot suiveur de ligne" width="100%" height="520">
       </div>
     </section>
 
     <section class="case-body container">
       <aside>
-        <p class="section-label">Case study</p>
-        <span>Robotics / Computer Vision</span>
+        <p class="section-label">Étude de cas</p>
+        <span>Robotique / Vision par ordinateur</span>
       </aside>
 
       <article>
-        <h2> Overview</h2>
+        <h2> Présentation</h2>
         <p>
-          The project aims to build a robot that follows a crop line, identifies
-          threats along its route and reports useful information to a PC interface.
-          The current code focuses on camera-based line detection and navigation.
+          Le projet vise à construire un robot qui suit un rang de culture, identifie les menaces sur son trajet et transmet des informations utiles à une interface PC. Le code actuel se concentre sur la détection de lignes par caméra et la navigation.
         </p>
 
-        <h2>Context</h2>
+        <h2>Contexte</h2>
         <p>
-          Developed as a robotics project, the system combines a mobile robot,
-          visual processing and a planned user interface. The exact crop,
-          threat types and elimination method still need to be defined with
-          the project supervisors.
+          Développé dans le cadre d’un projet de robotique, le système associe un robot mobile, du traitement d’images et une interface utilisateur prévue. La culture ciblée, les types de menaces et la méthode d’élimination restent à définir avec les encadrants du projet.
         </p>
 
-        <h2>Problem</h2>
+        <h2>Problématique</h2>
         <p>
-          A robot operating along a crop row needs to estimate where the line is
-          in the camera image and adjust its movement accordingly. It also needs
-          a safe response when the line is not detected.
+          Un robot se déplaçant le long d’un rang de culture doit estimer la position de la ligne dans l’image de la caméra et adapter son mouvement. Il doit également réagir de manière sûre lorsque la ligne n’est pas détectée.
         </p>
 
-        <h2>My contribution</h2>
+        <h2>Ma contribution</h2>
         <p>
-          The current implementation includes Python modules for camera capture,
-          line detection, navigation decisions and motor control. The line detector
-          supports predefined colors and configurable HSV ranges. Update this section
-          to describe your individual contribution and teamwork accurately.
+          L’implémentation actuelle comprend des modules Python pour la capture vidéo, la détection de lignes, les décisions de navigation et la commande des moteurs. Le détecteur prend en charge des couleurs prédéfinies et des plages HSV configurables. Complétez cette section pour décrire précisément votre contribution individuelle et le travail en équipe.
         </p>
 
-        <h2>Technical approach</h2>
+        <h2>Approche technique</h2>
         <p>
-          OpenCV converts the camera image to HSV and creates a mask for the
-          selected line color. The detector estimates the line's horizontal
-          position and returns a normalized error. Navigation uses that error
-          to request a turn, move forward or stop. Motor control uses PWM through
-          Raspberry Pi GPIO, with reusable channels and a simulated motor
-          implementation for tests.
+          OpenCV convertit l’image en HSV et crée un masque pour la couleur sélectionnée. Le détecteur estime la position horizontale de la ligne et renvoie une erreur normalisée. La navigation utilise cette erreur pour tourner, avancer ou s’arrêter. Les moteurs sont commandés en PWM via les GPIO du Raspberry Pi, avec des canaux réutilisables et une implémentation simulée pour les tests.
         </p>
 
-        <h2>Challenges</h2>
+        <h2>Difficultés</h2>
         <p>
-          The project addresses color-based detection, separating navigation
-          decisions from hardware control, and making the code testable without
-          a camera or physical motors. Reliable HSV thresholds still need to be
-          tuned for the actual camera, lighting and track.
+          Le projet aborde la détection par couleur, la séparation entre navigation et commande matérielle, et les tests sans caméra ni moteurs physiques. Les seuils HSV doivent encore être ajustés à la caméra, à l’éclairage et au parcours réels.
         </p>
 
-        <h2>Result</h2>
+        <h2>Résultat</h2>
         <p>
-          Automated tests cover synthetic line images, position estimates,
-          color filtering, navigation commands and simulated PWM behavior.
-          Testing with the physical robot and camera remains a separate step.
-          Threat recognition, the elimination mechanism and PC communication
-          are project goals, not verified features of the current implementation.
+          Les tests automatisés couvrent les images synthétiques, l’estimation de position, le filtrage des couleurs, les commandes de navigation et le PWM simulé. Les essais avec le robot et la caméra physiques restent une étape distincte. La reconnaissance des menaces, leur élimination et la communication PC sont des objectifs du projet, pas des fonctionnalités vérifiées de l’implémentation actuelle.
         </p>
 
-        <h2>What I learned</h2>
+        <h2>Ce que j’ai appris</h2>
         <p>
-          This project provided practical experience with image processing,
-          HSV color ranges, modular Python design, hardware abstraction and
-          testing robotics behavior without activating physical hardware.
+          Ce projet m’a apporté une expérience pratique du traitement d’images, des plages HSV, de la conception modulaire en Python, de l’abstraction matérielle et des tests robotiques sans activer de matériel physique.
         </p>
 
         <div class="case-links">
           <a href="https://github.com/Wendy-Patricia/robot-agricole" class="project-link" target="_blank" rel="noreferrer">
             <span class="link-label">GitHub</span>
-            <strong>View repository ↗</strong>
+            <strong>Voir le dépôt ↗</strong>
           </a>
         </div>
       </article>
@@ -132,15 +108,16 @@
     <div class="container footer-inner">
       <div>
         <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
-        <p>Computer Science Student · Developer</p>
+        <p>Étudiante en informatique · Développeuse</p>
       </div>
       <div class="footer-bottom">
         <span>© 2026</span>
-        <a href="#">Back to top ↑</a>
+        <a href="#">Retour en haut ↑</a>
       </div>
     </div>
   </footer>
 
+  <script src="../translations.js"></script>
   <script src="../script.js"></script>
 </body>
 </html>

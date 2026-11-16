@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -19,22 +19,22 @@
       <button class="menu-toggle" aria-expanded="false">Menu</button>
 
       <div class="nav-links">
-        <a href="../index.html#about">About</a>
-        <a href="../index.html#focus">What I Build</a>
-        <a href="../projects.html">Projects</a>
-        <a href="../index.html#skills">Skills</a>
-        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+        <a href="../index.html#about">À propos</a>
+        <a href="../index.html#focus">Mes réalisations</a>
+        <a href="../projects.html">Projets</a>
+        <a href="../index.html#skills">Compétences</a>
+        <a href="../index.html#contact" class="nav-cta">Discutons</a>
       </div>
+      <button class="language-toggle" type="button" lang="en" aria-label="Switch to English" title="Switch to English">EN</button>
     </nav>
   </header>
   <main>
     <section class="case-hero container">
-      <a class="back" href="../projects.html">← All projects</a>
-      <p class="eyebrow">Cinema / Web Application</p>
+      <a class="back" href="../projects.html">← Tous les projets</a>
+      <p class="eyebrow">Cinéma / Application web</p>
       <h1>CineVote</h1>
       <p class="case-lead">
-        A role-based cinema platform where users can explore films, contribute
-        new entries, and vote for films, actors, and directors.
+        Une plateforme de cinéma avec gestion des rôles, pour découvrir des films, proposer du contenu et voter pour des films, des acteurs et des réalisateurs.
       </p>
       <div class="tags">
         <span>PHP</span>
@@ -46,90 +46,66 @@
 
     <section class="case-visual container">
       <div class="case-placeholder">
-        <span>PROJECT VISUAL</span>
-        <strong>Add a real CineVote screenshot here.</strong>
-        <small>Use an image from the project; no screenshot was provided.</small>
+        <span>VISUEL DU PROJET</span>
+        <strong>Ajoutez ici une véritable capture d’écran de CineVote.</strong>
+        <small>Utilisez une image du projet ; aucune capture d’écran n’a été fournie.</small>
       </div>
     </section>
 
     <section class="case-body container">
       <aside>
-        <p class="section-label">Case study</p>
-        <span>Cinema / Web Application</span>
+        <p class="section-label">Étude de cas</p>
+        <span>Cinéma / Application web</span>
       </aside>
 
       <article>
-        <h2>Overview</h2>
+        <h2>Présentation</h2>
         <p>
-          CineVote is a cinema-focused web application for browsing films,
-          actors, and directors. Registered users can take part as electors or
-          candidates, while administrators review community-submitted content.
+          CineVote est une application web consacrée aux films, aux acteurs et aux réalisateurs. Les utilisateurs inscrits peuvent participer comme électeurs ou candidats, tandis que les administrateurs examinent les contenus proposés par la communauté.
         </p>
 
-        <h2>Context</h2>
+        <h2>Contexte</h2>
         <p>
-          The project brings together a public cinema catalogue and a
-          community-driven participation workflow. Its access is organized
-          around distinct roles for visitors, electors, candidates, and
-          administrators.
+          Le projet réunit un catalogue public de cinéma et un processus de participation communautaire. Les accès sont organisés selon les rôles de visiteur, d’électeur, de candidat et d’administrateur.
         </p>
 
-        <h2>Problem</h2>
+        <h2>Problématique</h2>
         <p>
-          A community catalogue needs a way to accept new film and
-          people-related entries without making every submission immediately
-          public. Voting also needs clear eligibility rules and a defined period
-          before results are shown.
+          Un catalogue communautaire doit accepter de nouvelles fiches de films et de personnalités sans publier immédiatement chaque proposition. Le vote exige aussi des règles d’éligibilité claires et une période définie avant l’affichage des résultats.
         </p>
 
-        <h2>My contribution</h2>
+        <h2>Ma contribution</h2>
         <p>
-I migrated the project from a previous PHP implementation to Symfony 7, implementing role-based access control, content moderation workflows, and voting functionality. I also designed the database schema with Doctrine ORM and created Twig templates for the user interface.
+J’ai migré le projet d’une implémentation PHP précédente vers Symfony 7, avec contrôle d’accès par rôle, modération des contenus et vote. J’ai aussi conçu le schéma de base de données avec Doctrine ORM et créé les modèles Twig de l’interface.
         </p>
 
-        <h2>Technical approach</h2>
+        <h2>Approche technique</h2>
         <p>
-          The application uses Symfony 7 with PHP, Doctrine ORM, and Twig.
-          Controllers handle catalogue, proposal, and voting requests; Doctrine
-          entities model users, films, actors, directors, categories, and votes.
-          Role-based access distinguishes electors, candidates, and
-          administrators.
+          L’application utilise Symfony 7, PHP, Doctrine ORM et Twig. Les contrôleurs traitent les requêtes du catalogue, des propositions et des votes ; les entités Doctrine représentent les utilisateurs, films, acteurs, réalisateurs, catégories et votes. Les accès distinguent les électeurs, candidats et administrateurs.
         </p>
         <p>
-          Candidate submissions are stored as pending until an administrator
-          approves or rejects them. Electors can vote once in each of three
-          categories: films, actors, and directors. Results become available
-          after the configured voting end date.
+          Les propositions des candidats restent en attente jusqu’à leur validation ou leur rejet par un administrateur. Les électeurs peuvent voter une fois dans chacune des trois catégories : films, acteurs et réalisateurs. Les résultats sont disponibles après la date de fin du vote configurée.
         </p>
 
-        <h2>Challenges</h2>
+        <h2>Difficultés</h2>
         <p>
-          The implementation has to coordinate permissions with content
-          moderation: candidates can submit entries, but only validated entries
-          appear in the public catalogue. Voting adds another set of rules,
-          including preventing repeat votes per category and withholding results
-          until the voting period has ended.
+          L’implémentation coordonne permissions et modération : les candidats proposent des fiches, mais seules les fiches validées apparaissent dans le catalogue public. Le vote interdit les votes multiples par catégorie et masque les résultats jusqu’à la fin de la période prévue.
         </p>
 
-        <h2>Result</h2>
+        <h2>Résultat</h2>
         <p>
-          The codebase provides a cinema catalogue with community submissions,
-          administrator moderation, role-restricted voting, and results
-          displayed after the voting period. Add verified deployment details or
-          project outcomes here if you have them.
+          Le code fournit un catalogue avec propositions communautaires, modération par les administrateurs, vote limité par rôle et résultats affichés après la période de vote. Ajoutez ici des détails de déploiement vérifiés ou des résultats du projet si vous en disposez.
         </p>
 
-        <h2>What I learned</h2>
+        <h2>Ce que j’ai appris</h2>
         <p>
-          Add your own reflection here: which parts of Symfony, Doctrine,
-          access control, moderation workflows, or testing you learned through
-          the project, and what you would approach differently next time.
+          Ajoutez votre propre réflexion : ce que ce projet vous a appris sur Symfony, Doctrine, le contrôle d’accès, la modération ou les tests, et ce que vous aborderiez autrement la prochaine fois.
         </p>
 
         <div class="case-links">
           <a href="https://github.com/Wendy-Patricia/CineVote" class="project-link" target="_blank" rel="noreferrer">
             <span class="link-label">GitHub</span>
-            <strong>View the repository</strong>
+            <strong>Voir le dépôt</strong>
           </a>
         </div>
       </article>
@@ -140,16 +116,17 @@ I migrated the project from a previous PHP implementation to Symfony 7, implemen
     <div class="container footer-inner">
       <div>
         <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
-        <p>Computer Science Student · Developer</p>
+        <p>Étudiante en informatique · Développeuse</p>
       </div>
 
       <div class="footer-bottom">
         <span>© 2026</span>
-        <a href="#">Back to top</a>
+        <a href="#">Retour en haut</a>
       </div>
     </div>
   </footer>
 
+  <script src="../translations.js"></script>
   <script src="../script.js"></script>
 </body>
 

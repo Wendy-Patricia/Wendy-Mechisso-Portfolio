@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -20,23 +20,23 @@
       <button class="menu-toggle" aria-expanded="false">Menu</button>
 
       <div class="nav-links">
-        <a href="../index.html#about">About</a>
-        <a href="../index.html#focus">What I Build</a>
-        <a href="../projects.html">Projects</a>
-        <a href="../index.html#skills">Skills</a>
-        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+        <a href="../index.html#about">À propos</a>
+        <a href="../index.html#focus">Mes réalisations</a>
+        <a href="../projects.html">Projets</a>
+        <a href="../index.html#skills">Compétences</a>
+        <a href="../index.html#contact" class="nav-cta">Discutons</a>
       </div>
+      <button class="language-toggle" type="button" lang="en" aria-label="Switch to English" title="Switch to English">EN</button>
     </nav>
   </header>
 
   <main>
     <section class="case-hero container">
-      <a class="back" href="../projects.html">Back to all projects</a>
-      <p class="eyebrow">Entertainment / Web Application</p>
+      <a class="back" href="../projects.html">Retour à tous les projets</a>
+      <p class="eyebrow">Divertissement / Application web</p>
       <h1>Binggge</h1>
       <p class="case-lead">
-        A web application for discovering TV shows and building a personal
-        watchlist, powered by TVMaze and PostgreSQL.
+        Une application web pour découvrir des séries et constituer une liste personnelle, avec TVMaze et PostgreSQL.
       </p>
       <div class="tags">
         <span>JavaScript</span>
@@ -49,104 +49,75 @@
 
     <section class="case-visual container">
       <div class="case-placeholder">
-        <img src="img/binggee.png" alt="Binggee interface screenshot" width="100%" height="520">
+        <img src="img/binggee.png" alt="Capture de l’interface de Binggee" width="100%" height="520">
       </div>
     </section>
 
     <section class="case-body container">
       <aside>
-        <p class="section-label">Case study</p>
-        <span>Entertainment / Web</span>
+        <p class="section-label">Étude de cas</p>
+        <span>Divertissement / Web</span>
       </aside>
 
       <article>
-        <h2>Overview</h2>
+        <h2>Présentation</h2>
         <p>
-          Binggge is a responsive TV series tracking application built with JavaScript, Vite and CSS, supported by an
-          Express API and PostgreSQL database. Users can search for series through TVMaze, explore synopses and episodes
-          organised by season, and manage a private watchlist. The interface is in French.
+          Binggge est une application responsive de suivi de séries, développée avec JavaScript, Vite et CSS, et reposant sur une API Express et PostgreSQL. Les utilisateurs peuvent rechercher des séries via TVMaze, explorer les synopsis et les épisodes organisés par saison, et gérer une liste privée. L’interface est en français.
         </p>
 
-        <h2>Context</h2>
+        <h2>Contexte</h2>
         <p>
-          Binggge is a personal web application developed incrementally.
-          It brings show discovery and watchlist management together in
-          one place.
+          Binggge est une application web personnelle développée progressivement. Elle réunit la découverte de séries et la gestion d’une liste de visionnage dans un même espace.
         </p>
 
-        <h2>Problem</h2>
+        <h2>Problématique</h2>
         <p>
-          Finding a show is only part of the experience. Users also need a
-          simple way to keep track of titles they want to watch and retrieve
-          their list later.
+          Trouver une série n’est qu’une partie de l’expérience. Les utilisateurs ont aussi besoin d’un moyen simple de suivre les titres qu’ils souhaitent regarder et de retrouver leur liste plus tard.
         </p>
 
-        <h2>My contribution</h2>
+        <h2>Ma contribution</h2>
         <p>
-          I developed and integrated the frontend and backend features, including series search, clickable cards,
-          synopses, episodes organised by season, and personal watchlists. I replaced username-only identification with
-          password-based authentication and secure sessions, improved accessibility and error handling, and added
-          automated tests.
-
-          I also refined the GitLab CI pipeline and configured deployment with Docker and PostgreSQL, troubleshooting
-          database initialisation, credentials and API routing.
+          J’ai développé et intégré le frontend et le backend : recherche de séries, cartes cliquables, synopsis, épisodes par saison et listes personnelles. J’ai remplacé l’identification par simple nom d’utilisateur par une authentification avec mot de passe et des sessions sécurisées, amélioré l’accessibilité et la gestion des erreurs, et ajouté des tests automatisés. J’ai aussi affiné le pipeline GitLab CI et configuré le déploiement Docker et PostgreSQL, en résolvant des problèmes d’initialisation de base de données, d’identifiants et de routage de l’API.
         </p>
 
-        <h2>Technical approach</h2>
+        <h2>Approche technique</h2>
         <p>
-          I kept the frontend lightweight with vanilla JavaScript, Vite and CSS, separating API requests, state, views,
-          search and focus management into small modules. Search uses debounce and request cancellation to prevent
-          outdated results. </p>
+          J’ai conservé un frontend léger avec JavaScript natif, Vite et CSS, en séparant les requêtes API, l’état, les vues, la recherche et la gestion du focus en petits modules. La recherche utilise une temporisation et l’annulation des requêtes pour éviter les résultats obsolètes. </p>
 
-        <p>The Express API connects to TVMaze for series and episode information and PostgreSQL for accounts, sessions
-          and watchlists. Passwords are protected with salted scrypt hashes, while sessions use HTTP-only cookies.
-          Private database queries are scoped to the authenticated user. </p>
+        <p>L’API Express se connecte à TVMaze pour les séries et les épisodes, et à PostgreSQL pour les comptes, les sessions et les listes. Les mots de passe sont protégés par des hachages scrypt avec sel et les sessions utilisent des cookies HTTP-only. Les requêtes privées sont limitées à l’utilisateur authentifié. </p>
 
-        <p> used semantic HTML, keyboard navigation, focus management and accessible status messages throughout the
-          interface. Testing combines isolated API tests, frontend tests and focused Playwright flows. Docker handles
-          compilation and deployment, with GitLab CI running automated checks.
+        <p> J’ai utilisé du HTML sémantique, la navigation au clavier, la gestion du focus et des messages d’état accessibles. Les tests combinent des tests d’API isolés, des tests frontend et des parcours Playwright ciblés. Docker gère la compilation et le déploiement, avec des vérifications automatisées dans GitLab CI.
         </p>
         <p>
-          Catalog pagination is handled in the frontend, showing six search
-          results per page. Search starts empty and runs when the user submits
-          a query.
+          La pagination du catalogue est gérée côté frontend, avec six résultats par page. La recherche est initialement vide et s’exécute lorsque l’utilisateur soumet une requête.
         </p>
 
-        <h2>Challenges</h2>
+        <h2>Difficultés</h2>
         <p>
-          The main challenges were replacing username-only identification with secure authentication, ensuring each
-          account could access only its own watchlist, and handling loading states and API failures clearly. Other
-          challenges included preventing outdated search results, making clickable cards and modals accessible,
-          simplifying CI tests, and resolving database configuration issues during deployment.
+          Les principales difficultés étaient de sécuriser l’authentification, de garantir que chaque compte n’accède qu’à sa propre liste et de présenter clairement les chargements et les erreurs d’API. Il fallait aussi éviter les résultats obsolètes, rendre les cartes et les fenêtres modales accessibles, simplifier les tests CI et résoudre la configuration de la base de données au déploiement.
 
         </p>
 
-        <h2>Result</h2>
+        <h2>Résultat</h2>
         <p>
-          The application now supports password-based registration, login and logout, private watchlists, watched-status
-          filters, series details and episode synopses. Search uses debounce and protection against outdated responses.
-          Automated API, frontend and browser tests cover the main flows, while Docker provides a consistent build and
-          deployment process.
+          L’application propose l’inscription avec mot de passe, la connexion et la déconnexion, des listes privées, des filtres par statut de visionnage, les détails des séries et les synopsis des épisodes. La recherche utilise une temporisation et une protection contre les réponses obsolètes. Les tests automatisés d’API, de frontend et de navigateur couvrent les parcours principaux ; Docker fournit un processus cohérent de compilation et de déploiement.
         </p>
 
-        <h2>What I learned</h2>
+        <h2>Ce que j’ai appris</h2>
         <p>
 
-          I learned how to connect frontend behaviour with backend security, protect passwords using salted hashes, and
-          manage sessions through HTTP-only cookies. I also developed practical experience with accessible interfaces,
-          asynchronous requests, isolated testing, GitLab CI and Docker deployment. Troubleshooting the server taught me
-          that rebuilding containers does not automatically update database schemas or stored credentials.
+          J’ai appris à relier le frontend à la sécurité du backend, à protéger les mots de passe par des hachages avec sel et à gérer les sessions avec des cookies HTTP-only. J’ai aussi acquis une expérience des interfaces accessibles, des requêtes asynchrones, des tests isolés, de GitLab CI et du déploiement Docker. Le dépannage du serveur m’a appris que reconstruire les conteneurs ne met pas automatiquement à jour les schémas ni les identifiants enregistrés en base de données.
         </p>
 
         <div class="case-links">
           <a href="https://iut.cafeclaudie.fr/e41813u/" class="project-link" target="_blank" rel="noreferrer">
-            <span class="link-label">Project Demo</span>
-               <strong>View the demo</strong>
+            <span class="link-label">Démonstration du projet</span>
+               <strong>Voir la démonstration</strong>
           </a>
           <a href="https://gitlab.univ-lorraine.fr/e41813u/binggge" class="project-link" target="_blank"
             rel="noreferrer">
             <span class="link-label">GitHub</span>
-            <strong>View the repository</strong>
+            <strong>Voir le dépôt</strong>
           </a>
         </div>
       </article>
@@ -157,16 +128,17 @@
     <div class="container footer-inner">
       <div>
         <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
-        <p>Computer Science Student · Developer</p>
+        <p>Étudiante en informatique · Développeuse</p>
       </div>
 
       <div class="footer-bottom">
         <span>© 2026</span>
-        <a href="#">Back to top</a>
+        <a href="#">Retour en haut</a>
       </div>
     </div>
   </footer>
 
+  <script src="../translations.js"></script>
   <script src="../script.js"></script>
 </body>
 

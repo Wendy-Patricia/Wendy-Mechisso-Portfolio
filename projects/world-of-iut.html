@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -20,117 +20,94 @@
       <button class="menu-toggle" aria-expanded="false">Menu</button>
 
       <div class="nav-links">
-        <a href="../index.html#about">About</a>
-        <a href="../index.html#focus">What I Build</a>
-        <a href="../projects.html">Projects</a>
-        <a href="../index.html#skills">Skills</a>
-        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+        <a href="../index.html#about">À propos</a>
+        <a href="../index.html#focus">Mes réalisations</a>
+        <a href="../projects.html">Projets</a>
+        <a href="../index.html#skills">Compétences</a>
+        <a href="../index.html#contact" class="nav-cta">Discutons</a>
       </div>
+      <button class="language-toggle" type="button" lang="en" aria-label="Switch to English" title="Switch to English">EN</button>
     </nav>
   </header>
 
   <main>
     <section class="case-hero container">
-      <a class="back" href="../projects.html">Back to all projects</a>
-      <p class="eyebrow">Game Development / Academic Project</p>
+      <a class="back" href="../projects.html">Retour à tous les projets</a>
+      <p class="eyebrow">Développement de jeux / Projet universitaire</p>
       <h1>World of IUT</h1>
       <p class="case-lead">
-        A text-based exploration game built in C, focused on player movement,
-        interconnected locations, and dynamic memory management using custom data structures.
+        Un jeu d’exploration textuel en C, centré sur les déplacements du joueur, les lieux interconnectés et la gestion dynamique de la mémoire avec des structures de données personnalisées.
       </p>
       <div class="tags">
         <span>C</span>
-        <span>Data Structures</span>
-        <span>Dynamic Memory</span>
-        <span>Pointers</span>
-        <span>Game Logic</span>
+        <span>Structures de données</span>
+        <span>Mémoire dynamique</span>
+        <span>Pointeurs</span>
+        <span>Logique de jeu</span>
       </div>
     </section>
 
     <section class="case-visual container">
       <div class="case-placeholder">
-        <img src="img/world-of-iut.png" alt="World of IUT game interface screenshot" width="100%" height="520">
+        <img src="img/world-of-iut.png" alt="Capture de l’interface du jeu World of IUT" width="100%" height="520">
       </div>
     </section>
 
     <section class="case-body container">
       <aside>
-        <p class="section-label">Case study</p>
-        <span>Game / C Project</span>
+        <p class="section-label">Étude de cas</p>
+        <span>Jeu / Projet C</span>
       </aside>
 
       <article>
-        <h2>Overview</h2>
+        <h2>Présentation</h2>
         <p>
-          World of IUT is a text adventure game developed in C as part of a first-year
-          university project. The player navigates through a series of interconnected locations,
-          moves between them, and explores the environment through a command-driven interface.
+          World of IUT est un jeu d’aventure textuel développé en C lors d’un projet universitaire de première année. Le joueur parcourt des lieux interconnectés et explore l’environnement grâce à une interface en ligne de commande.
         </p>
 
-        <h2>Context</h2>
+        <h2>Contexte</h2>
         <p>
-          This project was created during the SAE 1.01 course at IUT Saint-Dié-des-Vosges,
-          within the BUT Informatique program. It was designed to apply fundamental programming
-          concepts such as modular design, memory management, and structured data handling.
+          Réalisé pendant la SAE 1.01 à l’IUT de Saint-Dié-des-Vosges, en BUT Informatique, ce projet applique les concepts fondamentaux de programmation : conception modulaire, gestion de la mémoire et manipulation de données structurées.
         </p>
 
-        <h2>Problem</h2>
+        <h2>Problématique</h2>
         <p>
-          The goal was to create a playable game world with navigation logic, dynamic allocation,
-          and memory cleanup while keeping the code organized across multiple modules. The project
-          also had to model a connected map of locations and handle movement between them reliably.
+          L’objectif était de créer un monde jouable avec navigation, allocation dynamique et libération de la mémoire, tout en organisant le code en modules. Il fallait aussi modéliser une carte de lieux connectés et gérer les déplacements de manière fiable.
         </p>
 
-        <h2>My contribution</h2>
+        <h2>Ma contribution</h2>
         <p>
-          I contributed to the implementation of the core game structure, particularly the location
-          system and the stack-based memory management. I developed the logic behind creating and
-          destroying locations, setting exits between rooms, and managing the in-game world state.
+          J’ai contribué à la structure centrale du jeu, notamment au système de lieux et à la gestion de la mémoire par pile. J’ai développé la création et la destruction des lieux, la définition des sorties entre les salles et la gestion de l’état du monde.
         </p>
 
-        <h2>Technical approach</h2>
+        <h2>Approche technique</h2>
         <p>
-          The project was developed in C using a modular architecture. Each area of the game was
-          separated into dedicated files, including location management, player movement, command
-          processing, and resource cleanup. A custom stack structure was used to manage dynamically
-          allocated locations and ensure controlled freeing of memory.
+          Le projet utilise une architecture modulaire en C. Des fichiers dédiés gèrent les lieux, déplacements, commandes et ressources. Une pile personnalisée gère les lieux alloués dynamiquement et assure une libération contrôlée de la mémoire.
         </p>
         <p>
-          The game world is represented as a set of interconnected places, and movement is handled
-          by linking exits in different directions such as north, south, east, west, up, and down.
-          This allowed the player to explore the map through text commands while maintaining a clear
-          state model for the game.
+          Le monde est représenté par des lieux interconnectés, avec des sorties vers le nord, le sud, l’est, l’ouest, le haut et le bas. Le joueur explore ainsi la carte par des commandes textuelles en conservant un modèle d’état clair.
         </p>
 
-        <h2>Challenges</h2>
+        <h2>Difficultés</h2>
         <p>
-          One of the main challenges was managing dynamic memory safely and avoiding leaks when
-          the game was initialized and shut down. Another important part was ensuring the location
-          graph remained consistent and that each movement operation updated the player’s current
-          location correctly.
+          Une difficulté majeure était de gérer la mémoire dynamique de façon sûre et d’éviter les fuites à l’initialisation et à la fermeture. Il fallait aussi garantir la cohérence du graphe des lieux et actualiser correctement la position du joueur à chaque déplacement.
         </p>
 
-        <h2>Result</h2>
+        <h2>Résultat</h2>
         <p>
-          The project resulted in a working text-based exploration game with a structured world,
-          navigable rooms, and a reliable memory management system. It demonstrates strong
-          understanding of C fundamentals and data structure design in a practical, interactive
-          application.
+          Le projet a abouti à un jeu d’exploration textuel fonctionnel avec un monde structuré, des salles navigables et une gestion fiable de la mémoire. Il illustre les bases du C et la conception de structures de données dans une application interactive concrète.
         </p>
 
-        <h2>What I learned</h2>
+        <h2>Ce que j’ai appris</h2>
         <p>
-          This project strengthened my understanding of dynamic memory allocation, pointer usage,
-          structured program design, and the importance of careful resource management in C.
-          It also improved my ability to translate a game concept into a modular and maintainable
-          software architecture.
+          Ce projet a renforcé ma compréhension de l’allocation dynamique, des pointeurs, de la conception structurée et de la gestion des ressources en C. Il a aussi amélioré ma capacité à traduire un concept de jeu en une architecture modulaire et maintenable.
         </p>
 
         <div class="case-links">
 
           <a href="https://github.com/Wendy-Patricia/WorldOfIUT" class="project-link" target="_blank" rel="noreferrer">
             <span class="link-label">GitHub</span>
-            <strong>View the repository</strong>
+            <strong>Voir le dépôt</strong>
           </a>
         </div>
       </article>
@@ -141,16 +118,17 @@
     <div class="container footer-inner">
       <div>
         <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
-        <p>Computer Science Student · Developer</p>
+        <p>Étudiante en informatique · Développeuse</p>
       </div>
 
       <div class="footer-bottom">
         <span>© 2026</span>
-        <a href="#">Back to top</a>
+        <a href="#">Retour en haut</a>
       </div>
     </div>
   </footer>
 
+  <script src="../translations.js"></script>
   <script src="../script.js"></script>
 </body>
 

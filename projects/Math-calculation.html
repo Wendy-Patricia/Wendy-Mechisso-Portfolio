@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -15,105 +15,83 @@
       <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
       <button class="menu-toggle" aria-expanded="false">Menu</button>
       <div class="nav-links">
-        <a href="../index.html#about">About</a>
-        <a href="../index.html#focus">What I Build</a>
-        <a href="../projects.html">Projects</a>
-        <a href="../index.html#skills">Skills</a>
-        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+        <a href="../index.html#about">À propos</a>
+        <a href="../index.html#focus">Mes réalisations</a>
+        <a href="../projects.html">Projets</a>
+        <a href="../index.html#skills">Compétences</a>
+        <a href="../index.html#contact" class="nav-cta">Discutons</a>
       </div>
+      <button class="language-toggle" type="button" lang="en" aria-label="Switch to English" title="Switch to English">EN</button>
     </nav>
   </header>
 
   <main>
     <section class="case-hero container">
-      <a class="back" href="../projects.html">← All projects</a>
-      <p class="eyebrow">Mathematics / Python</p>
+      <a class="back" href="../projects.html">← Tous les projets</a>
+      <p class="eyebrow">Mathématiques / Python</p>
       <h1>Math-Calculation</h1>
       <p class="case-lead">
-        A collection of mathematical algorithms, including a Python command-line
-        tool for solving linear systems with Gaussian elimination.
+        Une collection d’algorithmes mathématiques, dont un outil Python en ligne de commande pour résoudre des systèmes linéaires par élimination de Gauss.
       </p>
       <div class="tags">
         <span>Python</span>
-        <span>Linear Algebra</span>
-        <span>Numerical Methods</span>
+        <span>Algèbre linéaire</span>
+        <span>Méthodes numériques</span>
       </div>
     </section>
 
 
     <section class="case-body container">
       <aside>
-        <p class="section-label">Case study</p>
-        <span>Mathematics / Python</span>
+        <p class="section-label">Étude de cas</p>
+        <span>Mathématiques / Python</span>
       </aside>
 
       <article>
-        <h2>Overview</h2>
+        <h2>Présentation</h2>
         <p>
-          Math-Calculation is a collection of mathematical algorithms implemented
-          in Python or R. The repository currently includes a linear algebra
-          program that solves systems of equations using Gaussian elimination.
+          Math-Calculation est une collection d’algorithmes mathématiques implémentés en Python ou en R. Le dépôt contient actuellement un programme d’algèbre linéaire résolvant des systèmes d’équations par élimination de Gauss.
         </p>
 
-        <h2>Context</h2>
+        <h2>Contexte</h2>
         <p>
-          This project is intended for study, practice and reference. The
-          elimination program provides a practical way to follow the row
-          operations used to solve a system of linear equations.
+          Ce projet est destiné à l’étude, à la pratique et à la consultation. Le programme d’élimination permet de suivre concrètement les opérations sur les lignes utilisées pour résoudre un système linéaire.
         </p>
 
-        <h2>Problem</h2>
+        <h2>Problématique</h2>
         <p>
-          Solving a system by hand involves a sequence of row operations that can
-          be difficult to track. This program accepts the system's coefficients
-          and right-hand-side values, then displays the augmented matrix as the
-          calculation progresses.
+          Résoudre un système à la main implique une suite d’opérations parfois difficile à suivre. Ce programme accepte les coefficients et les valeurs du second membre, puis affiche la matrice augmentée au fil du calcul.
         </p>
 
-        <h2>My contribution</h2>
+        <h2>Ma contribution</h2>
         <p>
-          I implemented an interactive command-line program that reads the
-          system size, validates the coefficient rows and right-hand-side
-          values, and prints the resulting solution when the system has a unique
-          solution.
+          J’ai implémenté un programme interactif en ligne de commande qui lit la taille du système, valide les coefficients et le second membre, puis affiche le résultat lorsque le système possède une solution unique.
         </p>
 
-        <h2>Technical approach</h2>
+        <h2>Approche technique</h2>
         <p>
-          The implementation uses partial pivoting to select the largest
-          available pivot in each column. It then normalizes pivot rows and
-          eliminates the corresponding values from the other rows, displaying
-          the augmented matrix after each operation. A numerical tolerance is
-          used when checking for near-zero pivots and values.
+          L’implémentation utilise le pivot partiel pour sélectionner le plus grand pivot disponible dans chaque colonne. Elle normalise les lignes de pivot et élimine les valeurs correspondantes des autres lignes, en affichant la matrice augmentée après chaque opération. Une tolérance numérique permet de vérifier les pivots et les valeurs proches de zéro.
         </p>
 
-        <h2>Challenges</h2>
+        <h2>Difficultés</h2>
         <p>
-          The program needs to handle invalid user input and account for
-          floating-point precision. It also detects when a pivot is too close
-          to zero to proceed with a unique solution.
+          Le programme doit gérer les saisies invalides et tenir compte de la précision des nombres flottants. Il détecte aussi lorsqu’un pivot est trop proche de zéro pour poursuivre avec une solution unique.
         </p>
 
-        <h2>Result</h2>
+        <h2>Résultat</h2>
         <p>
-          The current implementation solves square systems with a unique
-          solution and prints both the row operations and the final values of
-          the unknowns. Systems without a unique solution are reported as an
-          error.
+          L’implémentation actuelle résout les systèmes carrés à solution unique et affiche les opérations sur les lignes ainsi que les valeurs finales des inconnues. Les systèmes sans solution unique sont signalés comme une erreur.
         </p>
 
-        <h2>What I learned</h2>
+        <h2>Ce que j’ai appris</h2>
         <p>
-          This project demonstrates how row operations, partial pivoting and
-          floating-point tolerances can be translated into a step-by-step
-          algorithm, as well as how input validation supports a more reliable
-          command-line tool.
+          Ce projet montre comment traduire les opérations sur les lignes, le pivot partiel et les tolérances numériques en un algorithme étape par étape, et comment la validation des saisies améliore la fiabilité d’un outil en ligne de commande.
         </p>
 
         <div class="case-links">
           <a href="#" class="project-link" target="_blank" rel="noreferrer">
             <span class="link-label">GitHub</span>
-            <strong>View repository ↗</strong>
+            <strong>Voir le dépôt ↗</strong>
           </a>
         </div>
       </article>
@@ -124,15 +102,16 @@
     <div class="container footer-inner">
       <div>
         <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
-        <p>Computer Science Student · Developer</p>
+        <p>Étudiante en informatique · Développeuse</p>
       </div>
       <div class="footer-bottom">
         <span>© 2026</span>
-        <a href="#">Back to top ↑</a>
+        <a href="#">Retour en haut ↑</a>
       </div>
     </div>
   </footer>
 
+  <script src="../translations.js"></script>
   <script src="../script.js"></script>
 </body>
 </html>

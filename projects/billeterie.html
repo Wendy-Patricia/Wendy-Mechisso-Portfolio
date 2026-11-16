@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
@@ -20,23 +20,23 @@
             <button class="menu-toggle" aria-expanded="false">Menu</button>
 
             <div class="nav-links">
-                <a href="../index.html#about">About</a>
-                <a href="../index.html#focus">What I Build</a>
-                <a href="../projects.html">Projects</a>
-                <a href="../index.html#skills">Skills</a>
-                <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+                <a href="../index.html#about">À propos</a>
+                <a href="../index.html#focus">Mes réalisations</a>
+                <a href="../projects.html">Projets</a>
+                <a href="../index.html#skills">Compétences</a>
+                <a href="../index.html#contact" class="nav-cta">Discutons</a>
             </div>
-        </nav>
+          <button class="language-toggle" type="button" lang="en" aria-label="Switch to English" title="Switch to English">EN</button>
+    </nav>
     </header>
 
     <main>
         <section class="case-hero container">
-            <a class="back" href="../projects.html">Back to all projects</a>
+            <a class="back" href="../projects.html">Retour à tous les projets</a>
             <p class="eyebrow"></p>
-            <h1> Cinema Ticketing System </h1>
+            <h1> Système de billetterie de cinéma </h1>
             <p class="case-lead">
-                A website for a ticket reservation system for a cinema, allowing users to browse available movies,
-                select showtimes, and reserve tickets online.
+                Un site de réservation de billets de cinéma permettant de parcourir les films, de choisir une séance et de réserver en ligne.
             </p>
             <div class="tags">
                 <span>JavaScript</span>
@@ -49,74 +49,58 @@
 
         <section class="case-visual container">
             <div class="case-placeholder">
-                <img src="img/bilhiteria.png" alt="Ticketing system interface screenshot" width="100%" height="520">
+                <img src="img/bilhiteria.png" alt="Capture de l’interface de billetterie" width="100%" height="520">
             </div>
         </section>
 
         <section class="case-body container">
             <aside>
-                <p class="section-label">Case study</p>
-                <span>Ticketing / Web</span>
+                <p class="section-label">Étude de cas</p>
+                <span>Billetterie / Web</span>
             </aside>
 
             <article>
-                <h2>Overview</h2>
+                <h2>Présentation</h2>
                 <p>
-                    Concert Ticketing System - Encore is a web application for browsing concerts, purchasing tickets,
-                    and managing events. It combines a searchable catalogue, customer registration, and a loyalty
-                    programme offering a 10% discount.
+                    Concert Ticketing System - Encore est une application web pour découvrir des concerts, acheter des billets et gérer des événements. Elle associe un catalogue consultable, l’inscription des clients et un programme de fidélité offrant une réduction de 10 %.
                 </p>
 
-                <h2>Context</h2>
+                <h2>Contexte</h2>
                 <p>
-                    The project was developed in a team of two. Responsibilities were divided between the concert
-                    catalogue, infrastructure, and security, and the customer, loyalty, and purchasing modules. Both
-                    parts were integrated into a single application with a Java backend and a Portuguese interface.
+                    Le projet a été développé en binôme. Les responsabilités étaient réparties entre le catalogue de concerts, l’infrastructure et la sécurité d’une part, et les modules clients, fidélité et achats d’autre part. Les deux parties ont été intégrées dans une application unique avec un backend Java et une interface en portugais.
                 </p>
 
-                <h2>Problem</h2>
+                <h2>Problématique</h2>
                 <p>
 
-                    The goal was to centralise information about artists, venues, and concerts while providing a
-                    reliable ticket purchasing process. The application needed to validate data, enforce access
-                    permissions, calculate prices, and prevent purchases exceeding venue capacity.
+                    L’objectif était de centraliser les informations sur les artistes, les salles et les concerts tout en proposant un achat fiable. L’application devait valider les données, appliquer les droits d’accès, calculer les prix et empêcher les achats dépassant la capacité des salles.
                 </p>
 
-                <h2>My contribution</h2>
+                <h2>Ma contribution</h2>
                 <p>
-                    My contribution focused on the concert catalogue, infrastructure, and security. I worked on
-                    modelling artists, venues, and concerts, implementing REST endpoints, and configuring role-based
-                    permissions. I also contributed to database migrations, API documentation, and catalogue tests.
+                    Ma contribution portait sur le catalogue de concerts, l’infrastructure et la sécurité. J’ai travaillé sur la modélisation des artistes, salles et concerts, les endpoints REST et les permissions par rôle. J’ai aussi contribué aux migrations, à la documentation de l’API et aux tests du catalogue.
                 </p>
 
-                <h2>Technical approach</h2>
+                <h2>Approche technique</h2>
                 <p>
-                    The backend uses Java 25 and Spring Boot, with separate controller, service, and repository layers.
-                    Spring Data JPA and MySQL handle persistence, while Flyway manages versioned database migrations.
+                    Le backend utilise Java 25 et Spring Boot, avec des couches contrôleur, service et dépôt distinctes. Spring Data JPA et MySQL assurent la persistance, tandis que Flyway gère les migrations versionnées.
                 </p>
                 <p>
 
-                    Spring Security controls access through CLIENT, PRODUCTEUR, and ADMIN roles. The API is documented
-                    with Swagger/OpenAPI, and MySQL runs through Docker Compose. The HTML, CSS, and JavaScript frontend
-                    communicates directly with the backend
+                    Spring Security contrôle les accès grâce aux rôles CLIENT, PRODUCTEUR et ADMIN. L’API est documentée avec Swagger/OpenAPI et MySQL s’exécute via Docker Compose. Le frontend HTML, CSS et JavaScript communique directement avec le backend.
                 </p>
 
-                <h2>Challenges</h2>
+                <h2>Difficultés</h2>
                 <p>
-                    A key challenge was integrating both modules while keeping entities, API contracts, and database
-                    migrations consistent. Another was maintaining accurate ticket availability during simultaneous
-                    purchases, using database transactions and locking.</p>
+                    Une difficulté majeure était d’intégrer les deux modules en maintenant la cohérence des entités, des contrats d’API et des migrations. Il fallait aussi garantir la disponibilité exacte des billets lors d’achats simultanés, grâce aux transactions et aux verrous en base de données.</p>
                 <p>
-                    The project also required consistent validation across the application and database, alongside clear
-                    error messages in the interface.
+                    Le projet exigeait aussi une validation cohérente dans l’application et la base de données, ainsi que des messages d’erreur clairs dans l’interface.
 
                 </p>
 
-                <h2>Result</h2>
+                <h2>Résultat</h2>
                 <p>
-                    The resulting application supports concert searches, customer registration, loyalty card activation,
-                    and purchases of one to six tickets. It also includes role-protected management features and
-                    automated tests covering business rules, security, persistence, and concurrent purchases.
+                    L’application permet de rechercher des concerts, de créer un compte, d’activer une carte de fidélité et d’acheter entre un et six billets. Elle comprend des fonctions de gestion protégées par rôle et des tests couvrant les règles métier, la sécurité, la persistance et les achats simultanés.
 
                 </p>
 
@@ -125,7 +109,7 @@
                     <a href="https://github.com/Wendy-Patricia/concert-ticketing-system" class="project-link"
                         target="_blank" rel="noreferrer">
                         <span class="link-label">GitHub</span>
-                        <strong>View the repository</strong>
+                        <strong>Voir le dépôt</strong>
                     </a>
                 </div>
             </article>
@@ -136,17 +120,18 @@
         <div class="container footer-inner">
             <div>
                 <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
-                <p>Computer Science Student · Developer</p>
+                <p>Étudiante en informatique · Développeuse</p>
             </div>
 
             <div class="footer-bottom">
                 <span>© 2026</span>
-                <a href="#">Back to top</a>
+                <a href="#">Retour en haut</a>
             </div>
         </div>
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="../translations.js"></script>
+  <script src="../script.js"></script>
 </body>
 
 </html>

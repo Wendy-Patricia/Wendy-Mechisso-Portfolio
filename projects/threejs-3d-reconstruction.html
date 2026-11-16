@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -19,29 +19,29 @@
       <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
       <button class="menu-toggle" aria-expanded="false">Menu</button>
       <div class="nav-links">
-        <a href="../index.html#about">About</a>
-        <a href="../index.html#focus">What I Build</a>
-        <a href="../projects.html">Projects</a>
-        <a href="../index.html#skills">Skills</a>
-        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+        <a href="../index.html#about">À propos</a>
+        <a href="../index.html#focus">Mes réalisations</a>
+        <a href="../projects.html">Projets</a>
+        <a href="../index.html#skills">Compétences</a>
+        <a href="../index.html#contact" class="nav-cta">Discutons</a>
       </div>
+      <button class="language-toggle" type="button" lang="en" aria-label="Switch to English" title="Switch to English">EN</button>
     </nav>
   </header>
 
   <main>
     <section class="case-hero container">
-      <a class="back" href="../projects.html">← All projects</a>
+      <a class="back" href="../projects.html">← Tous les projets</a>
       <p class="eyebrow">3D / WebGL</p>
       <h1>Scène Maritime</h1>
       <p class="case-lead">
-        An interactive Three.js scene that recreates three sailboats crossing
-        a reflective ocean at sunset.
+        Une scène interactive Three.js qui recrée trois voiliers traversant un océan réfléchissant au coucher du soleil.
       </p>
       <div class="tags">
         <span>Three.js</span>
         <span>WebGL</span>
         <span>GLSL</span>
-        <span>3D Graphics</span>
+        <span>Infographie 3D</span>
       </div>
     </section>
 
@@ -49,85 +49,65 @@
       <div class="case-placeholder">
         <section class="case-visual container">
           <div class="case-placeholder">
-            <img src="img/3d_interaction.png" alt="3D Interaction" width="100%" height="520">
+            <img src="img/3d_interaction.png" alt="Interaction 3D" width="100%" height="520">
           </div>
         </section>
     </section>
 
     <section class="case-body container">
       <aside>
-        <p class="section-label">Case study</p>
+        <p class="section-label">Étude de cas</p>
         <span>3D / WebGL</span>
       </aside>
 
       <article>
-        <h2>Overview</h2>
+        <h2>Présentation</h2>
         <p>
-          Scène Maritime is an interactive 3D project built with Three.js and
-          WebGL. It depicts three sailboats on a reflective ocean beneath a
-          warm sunset, with orbit controls and real-time scene adjustments.
+          Scène Maritime est un projet 3D interactif avec Three.js et WebGL. Il représente trois voiliers sur un océan réfléchissant sous un coucher de soleil chaleureux, avec des commandes orbitales et des réglages en temps réel.
         </p>
 
-        <h2>Context</h2>
+        <h2>Contexte</h2>
         <p>
-          Created for the 3D Modeling course at IUT Saint-Dié during the
-          2025–2026 academic year, the project was inspired by a watercolor
-          painting of sailboats heading toward a vivid sunset.
+          Réalisé pour le cours de modélisation 3D à l’IUT de Saint-Dié durant l’année 2025–2026, le projet s’inspire d’une aquarelle de voiliers se dirigeant vers un coucher de soleil éclatant.
         </p>
 
-        <h2>Problem</h2>
+        <h2>Problématique</h2>
         <p>
-          The challenge was to translate the painting's lighting, reflections,
-          atmospheric depth and sense of movement into a real-time 3D scene
-          that viewers could explore and interact with.
+          Le défi était de traduire la lumière, les reflets, la profondeur atmosphérique et le mouvement de la peinture en une scène 3D explorable et interactive en temps réel.
         </p>
 
 
-        <h2>Technical approach</h2>
+        <h2>Approche technique</h2>
         <p>
-          The scene combines Three.js components including Sky, Water,
-          Reflector and OrbitControls. A custom GLSL shader distorts the water
-          reflection, while animated cloud sprites and particle-based fog add
-          movement and atmospheric depth.
+          La scène combine Sky, Water, Reflector et OrbitControls de Three.js. Un shader GLSL personnalisé déforme le reflet de l’eau ; des sprites de nuages animés et un brouillard de particules ajoutent du mouvement et de la profondeur.
         </p>
         <p>
-          The boats use textured materials with normal and specular maps.
-          Directional lighting and soft shadow maps create the sunset
-          illumination. A control panel lets viewers move and reset the boats,
-          adjust fog density, and change the opacity of hulls and sails.
+          Les bateaux utilisent des matériaux texturés avec des cartes de normales et de spécularité. Un éclairage directionnel et des ombres douces créent la lumière du coucher de soleil. Un panneau permet de déplacer et réinitialiser les bateaux, d’ajuster le brouillard et de modifier l’opacité des coques et des voiles.
         </p>
 
-        <h2>Challenges</h2>
+        <h2>Difficultés</h2>
         <p>
-          The project brings together several rendering techniques that need
-          to work in the same scene: the animated water surface, a custom
-          reflective shader, atmospheric fog, shadows and interactive boat
-          movement. Keeping the scene adjustable while preserving the sunset
-          mood was also an important part of the implementation.
+          Le projet réunit plusieurs techniques : eau animée, shader de réflexion, brouillard atmosphérique, ombres et déplacement interactif des bateaux. Conserver les réglages de la scène tout en préservant l’ambiance du coucher de soleil était aussi un enjeu de l’implémentation.
         </p>
 
-        <h2>Result</h2>
+        <h2>Résultat</h2>
         <p>
-          The result is an explorable sunset scene featuring three movable
-          sailboats, animated clouds, adjustable fog and boat transparency,
-          soft shadows and a distorted reflection on the water.
+          Le résultat est une scène de coucher de soleil explorable avec trois voiliers mobiles, des nuages animés, un brouillard et une transparence réglables, des ombres douces et un reflet déformé sur l’eau.
         </p>
 
-        <h2>What I learned</h2>
+        <h2>Ce que j’ai appris</h2>
         <p>
-          The project provided practical experience with Three.js scene
-          composition, WebGL materials, texture maps, GLSL shader
-          customization, raycasting and real-time interaction controls.
+          Ce projet m’a apporté une expérience pratique de la composition de scènes Three.js, des matériaux WebGL, des textures, des shaders GLSL, du raycasting et des commandes interactives en temps réel.
         </p>
         <div class="case-links">
           <a href="https://project-webgl.vercel.app/" class="project-link" target="_blank" rel="noreferrer">
-            <span class="link-label">Live site</span>
-            <strong>View the website</strong>
+            <span class="link-label">Site en ligne</span>
+            <strong>Voir le site</strong>
           </a>
 
           <a href="https://github.com/Wendy-Patricia/Project-webgl" class="project-link" target="_blank" rel="noreferrer">
             <span class="link-label">GitHub</span>
-            <strong>View the repository</strong>
+            <strong>Voir le dépôt</strong>
           </a>
         </div>
       </article>
@@ -138,15 +118,16 @@
     <div class="container footer-inner">
       <div>
         <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
-        <p>Computer Science Student · Developer</p>
+        <p>Étudiante en informatique · Développeuse</p>
       </div>
       <div class="footer-bottom">
         <span>© 2026</span>
-        <a href="#">Back to top ↑</a>
+        <a href="#">Retour en haut ↑</a>
       </div>
     </div>
   </footer>
 
+  <script src="../translations.js"></script>
   <script src="../script.js"></script>
 </body>
 

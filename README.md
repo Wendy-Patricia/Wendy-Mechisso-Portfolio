@@ -9,6 +9,11 @@ A static, responsive developer portfolio based on the provided portfolio brief.
 - `projects/` - individual project case-study pages
 - `style.css` - visual system and responsive layout
 - `script.js` - mobile navigation, filters and small draggable workspace
+- `translations.js` - French/English translations shared by all pages
+
+## Languages
+
+French is the default language in every HTML page, including without JavaScript. The header's EN/FR button switches the page language and remembers the selection in local storage when available. To edit translated copy, update the French HTML text and its matching French/English pair in `translations.js`. Keep technical names and code examples unchanged.
 
 ## Before publishing
 

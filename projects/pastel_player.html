@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -20,22 +20,23 @@
       <button class="menu-toggle" aria-expanded="false">Menu</button>
 
       <div class="nav-links">
-        <a href="../index.html#about">About</a>
-        <a href="../index.html#focus">What I Build</a>
-        <a href="../projects.html">Projects</a>
-        <a href="../index.html#skills">Skills</a>
-        <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+        <a href="../index.html#about">À propos</a>
+        <a href="../index.html#focus">Mes réalisations</a>
+        <a href="../projects.html">Projets</a>
+        <a href="../index.html#skills">Compétences</a>
+        <a href="../index.html#contact" class="nav-cta">Discutons</a>
       </div>
+      <button class="language-toggle" type="button" lang="en" aria-label="Switch to English" title="Switch to English">EN</button>
     </nav>
   </header>
 
   <main>
     <section class="case-hero container">
-      <a class="back" href="../projects.html">Back to all projects</a>
-      <p class="eyebrow">Entertainment / Web Application</p>
+      <a class="back" href="../projects.html">Retour à tous les projets</a>
+      <p class="eyebrow">Divertissement / Application web</p>
       <h1>Pastel Player</h1>
       <p class="case-lead">
-        A Spotify desktop player for Windows, built with Electron, React, and TypeScript.
+        Un lecteur Spotify pour Windows, développé avec Electron, React et TypeScript.
       </p>
       <div class="tags">
         <span>JavaScript</span>
@@ -48,80 +49,69 @@
 
     <section class="case-visual container">
       <div class="case-placeholder">
-        <img src="img/pastel_player.png" alt="Pastel Player interface screenshot" width="100%" height="520">
+        <img src="img/pastel_player.png" alt="Capture de l’interface de Pastel Player" width="100%" height="520">
       </div>
     </section>
 
     <section class="case-body container">
       <aside>
-        <p class="section-label">Case study</p>
-        <span>Entertainment / Web</span>
+        <p class="section-label">Étude de cas</p>
+        <span>Divertissement / Web</span>
       </aside>
 
       <article>
-        <h2>Overview</h2>
+        <h2>Présentation</h2>
         <p>
-          A Spotify desktop player for Windows, built with Electron, React, and TypeScript, featuring a custom pastel
-          interface and integrated music playback.
+          Un lecteur Spotify pour Windows, développé avec Electron, React et TypeScript, avec une interface pastel personnalisée et la lecture musicale intégrée.
         </p>
 
-        <h2>Context</h2>
+        <h2>Contexte</h2>
         <p>
-          A personal project combining desktop application development, interface design, and integration with Spotify’s
-          authentication and playback services.
+          Un projet personnel associant application de bureau, conception d’interface et intégration des services d’authentification et de lecture de Spotify.
         </p>
 
-        <h2>Problem</h2>
+        <h2>Problématique</h2>
         <p>
-          Create a desktop listening experience that plays music within the application without requiring the official
-          Spotify Desktop app to remain open.
+          Créer une expérience d’écoute qui lit la musique dans l’application sans nécessiter de garder l’application officielle Spotify Desktop ouverte.
         </p>
 
-        <h2>My contribution</h2>
+        <h2>Ma contribution</h2>
         <p>
-          I developed the responsive interface, integrated Spotify authentication and playlist loading, implemented
-          playback controls, and configured secure communication between Electron and React. I also added automated
-          tests and a Windows desktop shortcut
+          J’ai développé l’interface responsive, intégré l’authentification Spotify et le chargement des playlists, implémenté les commandes de lecture et sécurisé la communication entre Electron et React. J’ai aussi ajouté des tests automatisés et un raccourci Windows.
         </p>
 
-        <h2>Technical Approach</h2>
+        <h2>Démarche technique</h2>
 
         <ul>
-          <li>Built reusable React components with TypeScript.</li>
-          <li>Used OAuth 2.0 with PKCE and encrypted storage for refresh tokens.</li>
-          <li>Integrated the Spotify Web API and Web Playback SDK.</li>
-          <li>Secured Electron with context isolation, sandboxing, and validated IPC methods.</li>
-          <li>Used a Widevine-enabled Electron runtime for protected audio playback.</li>
+          <li>Création de composants React réutilisables avec TypeScript.</li>
+          <li>Utilisation d’OAuth 2.0 avec PKCE et d’un stockage chiffré pour les jetons de renouvellement.</li>
+          <li>Intégration de la Spotify Web API et du Web Playback SDK.</li>
+          <li>Sécurisation d’Electron avec isolation du contexte, sandboxing et méthodes IPC validées.</li>
+          <li>Utilisation d’un environnement Electron compatible Widevine pour la lecture audio protégée.</li>
         </ul>
-        <h2>Challenges</h2>
+        <h2>Difficultés</h2>
         <p>
-          Handling DRM requirements and VMP signing, keeping playback controls synchronized with Spotify, and correctly
-          processing API responses that contained empty bodies or plain text instead of JSON.
+          Gérer les exigences DRM et la signature VMP, synchroniser les commandes avec Spotify et traiter les réponses d’API contenant un corps vide ou du texte brut plutôt que du JSON.
 
 
         </p>
 
-        <h2>Result</h2>
+        <h2>Résultat</h2>
         <p>
-          Delivered a working desktop player with automatic playlist loading, album artwork, playback navigation,
-          seeking, volume, shuffle, and repeat controls. Added loading and error states, responsive layouts, and 39
-          passing automated tests.
+          Livraison d’un lecteur fonctionnel avec chargement automatique des playlists, pochettes d’albums, navigation, positionnement, volume, lecture aléatoire et répétition. Ajout d’états de chargement et d’erreur, de mises en page responsive et de 39 tests automatisés réussis.
         </p>
 
-        <h2>What I learned</h2>
+        <h2>Ce que j’ai appris</h2>
         <p>
 
-          I learned how to connect frontend behaviour with backend security, protect passwords using salted hashes, and
-          manage sessions through HTTP-only cookies. I also developed practical experience with accessible interfaces,
-          asynchronous requests, isolated testing, GitLab CI and Docker deployment. Troubleshooting the server taught me
-          that rebuilding containers does not automatically update database schemas or stored credentials.
+          J’ai appris à relier le frontend à la sécurité du backend, à protéger les mots de passe par des hachages avec sel et à gérer les sessions avec des cookies HTTP-only. J’ai aussi acquis une expérience des interfaces accessibles, des requêtes asynchrones, des tests isolés, de GitLab CI et du déploiement Docker. Le dépannage du serveur m’a appris que reconstruire les conteneurs ne met pas automatiquement à jour les schémas ni les identifiants enregistrés en base de données.
         </p>
 
         <div class="case-links">
           <a href="https://github.com/Wendy-Patricia/Spotify-Desktop-Player" class="project-link" target="_blank"
             rel="noreferrer">
             <span class="link-label">GitHub</span>
-            <strong>View the repository</strong>
+            <strong>Voir le dépôt</strong>
           </a>
         </div>
       </article>
@@ -132,16 +122,17 @@
     <div class="container footer-inner">
       <div>
         <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
-        <p>Computer Science Student · Developer</p>
+        <p>Étudiante en informatique · Développeuse</p>
       </div>
 
       <div class="footer-bottom">
         <span>© 2026</span>
-        <a href="#">Back to top</a>
+        <a href="#">Retour en haut</a>
       </div>
     </div>
   </footer>
 
+  <script src="../translations.js"></script>
   <script src="../script.js"></script>
 </body>
 
