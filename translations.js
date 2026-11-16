@@ -1075,5 +1075,229 @@ window.portfolioTranslations = [
   [
     "Wendy Patrícia - Étudiante en informatique et développeuse. Un espace personnel pour mes projets logiciels, de bases de données, de robotique et de systèmes.",
     "Wendy Patrícia - Computer Science student and developer. A personal space for software, databases, robotics and systems projects."
+  ],
+  [
+    "Gestion d’une compagnie aérienne",
+    "Airline management"
+  ],
+  [
+    "Gestion d’une compagnie aérienne - Wendy Patrícia",
+    "Airline management - Wendy Patrícia"
+  ],
+  [
+    "Une mini-application Java connectée à MySQL avec JDBC pour gérer les avions, les pilotes, les vols, les passagers et les réservations.",
+    "A Java mini-application connected to MySQL through JDBC to manage aircraft, pilots, flights, passengers and reservations."
+  ],
+  [
+    "Bases de données / UE4 - Gérer",
+    "Databases / UE4 - Manage"
+  ],
+  [
+    "Java",
+    "Java"
+  ],
+  [
+    "JDBC",
+    "JDBC"
+  ],
+  [
+    "MySQL",
+    "MySQL"
+  ],
+  [
+    "Architecture DAO",
+    "DAO architecture"
+  ],
+  [
+    "Ce projet a été réalisé dans le cadre de la ressource « SQL dans un langage de programmation » du BUT Informatique. L’objectif était de relier une application Java à une base relationnelle, de gérer les connexions et de transformer les résultats SQL en objets Java.",
+    "This project was developed for the BUT Informatique course “SQL in a programming language”. The goal was to connect a Java application to a relational database, manage connections and turn SQL results into Java objects."
+  ],
+  [
+    "La gestion d’une compagnie aérienne nécessite de manipuler plusieurs entités liées. Une réservation relie notamment un passager à un vol : les clés étrangères et les jointures doivent préserver la cohérence des données tout en permettant les opérations de création, de lecture, de modification et de suppression.",
+    "Airline management involves several related entities. In particular, a reservation connects a passenger to a flight: foreign keys and joins must preserve data consistency while supporting create, read, update and delete operations."
+  ],
+  [
+    "J’ai développé les classes métier représentant les avions, les pilotes, les vols, les passagers et les réservations, ainsi que les classes DAO dédiées aux opérations CRUD. Cette séparation des responsabilités permet de distinguer les données métier des opérations d’accès à la base.",
+    "I developed the model classes representing aircraft, pilots, flights, passengers and reservations, alongside DAO classes dedicated to CRUD operations. This separation of responsibilities keeps business data separate from database access operations."
+  ],
+  [
+    "J’ai utilisé Connection, Statement, PreparedStatement et ResultSet pour communiquer avec MySQL et récupérer les résultats dans l’application. Les requêtes paramétrées avec PreparedStatement permettent de manipuler les saisies utilisateur en limitant les risques d’injection SQL.",
+    "I used Connection, Statement, PreparedStatement and ResultSet to communicate with MySQL and retrieve results in the application. Parameterized queries with PreparedStatement handle user input while reducing SQL injection risks."
+  ],
+  [
+    "La mini-application met en pratique les opérations CRUD sur plusieurs tables liées et une architecture organisée en modèles et DAO. Elle concrétise le lien entre la programmation Java et les mécanismes d’une base de données relationnelle.",
+    "The mini-application puts CRUD operations across related tables and a model/DAO architecture into practice. It connects Java programming with the mechanisms of a relational database."
+  ],
+  [
+    "J’ai appris à intégrer SQL dans un programme Java, à convertir les résultats en objets, à gérer les relations entre tables et à structurer les accès aux données. Ce projet a aussi renforcé ma rigueur et ma compréhension de la sécurité des requêtes.",
+    "I learned to integrate SQL into a Java program, convert results into objects, manage relationships between tables and structure data access. The project also strengthened my attention to detail and understanding of query security."
+  ],
+  [
+    "BUT Informatique · UE4 - Gérer",
+    "BUT Informatique · UE4 - Manage"
+  ],
+  [
+    "13 / Bases de données",
+    "13 / Databases"
+  ],
+  [
+    "Base de données électorale",
+    "Electoral database"
+  ],
+  [
+    "Base de données électorale - Wendy Patrícia",
+    "Electoral database - Wendy Patrícia"
+  ],
+  [
+    "Modélisation et schéma SQL d’une application électorale : utilisateurs, candidatures, votes, intégrité des données et publication des résultats.",
+    "Data modelling and SQL schema for an electoral application: users, candidacies, votes, data integrity and publication of results."
+  ],
+  [
+    "SQL",
+    "SQL"
+  ],
+  [
+    "MCD",
+    "Conceptual data model"
+  ],
+  [
+    "Procédures stockées",
+    "Stored procedures"
+  ],
+  [
+    "Intégrité des données",
+    "Data integrity"
+  ],
+  [
+    "Ce travail de conception de base de données s’inscrit dans la compétence « UE4 - Gérer » du BUT Informatique. À partir d’un cahier des charges d’application électorale, j’ai travaillé sur la structuration des données avant leur implémentation relationnelle.",
+    "This database design work is part of the BUT Informatique competency “UE4 - Manage”. Starting from the requirements for an electoral application, I worked on structuring the data before its relational implementation."
+  ],
+  [
+    "Le modèle doit représenter les utilisateurs, les candidatures, les votes et les résultats en respectant les exigences fonctionnelles. Il faut également prendre en compte l’anonymat du vote, la traçabilité des opérations et la cohérence des informations enregistrées.",
+    "The model must represent users, candidacies, votes and results while meeting functional requirements. It must also account for ballot anonymity, operation traceability and consistency of the stored information."
+  ],
+  [
+    "J’ai identifié les entités nécessaires, défini leurs attributs et modélisé leurs relations dans un modèle conceptuel de données. J’ai ensuite conçu le schéma SQL, les contraintes d’intégrité et les procédures stockées nécessaires à la gestion de l’application.",
+    "I identified the required entities, defined their attributes and modelled their relationships in a conceptual data model. I then designed the SQL schema, integrity constraints and stored procedures needed to support the application."
+  ],
+  [
+    "Le travail relie la modélisation conceptuelle aux structures relationnelles. Les contraintes d’intégrité et les mécanismes SQL encadrent la gestion des utilisateurs, les votes et la publication des résultats, en tenant compte des besoins de sécurité et de traçabilité.",
+    "The work connects conceptual modelling with relational structures. Integrity constraints and SQL mechanisms govern user management, voting and result publication, taking security and traceability requirements into account."
+  ],
+  [
+    "Réalisations",
+    "Deliverables"
+  ],
+  [
+    "Deux réalisations structurent ce projet : le MCD de l’application électorale et son schéma SQL. Elles illustrent le passage de l’analyse des besoins à une organisation des données adaptée à une application web.",
+    "Two deliverables structure this project: the electoral application’s conceptual data model and its SQL schema. They illustrate the transition from requirements analysis to a data organization suited to a web application."
+  ],
+  [
+    "J’ai renforcé ma capacité à concevoir une base à partir d’un cahier des charges et à justifier mes choix de modélisation. Ce travail m’a sensibilisée à l’importance de la qualité des données et des mécanismes de sécurité dès la conception.",
+    "I strengthened my ability to design a database from requirements and justify modelling choices. This work highlighted the importance of data quality and security mechanisms from the design stage."
+  ],
+  [
+    "14 / Bases de données",
+    "14 / Databases"
+  ],
+  [
+    "Modélisation d’une école de voile",
+    "Sailing school data modelling"
+  ],
+  [
+    "Modélisation d’une école de voile - Wendy Patrícia",
+    "Sailing school data modelling - Wendy Patrícia"
+  ],
+  [
+    "Étude de cas du Cercle de Voile d’Épinal : modéliser les inscriptions, la désignation des moniteurs et l’affectation du matériel.",
+    "A Cercle de Voile d’Épinal case study: modelling registrations, instructor assignments and equipment allocation."
+  ],
+  [
+    "MySQL Workbench",
+    "MySQL Workbench"
+  ],
+  [
+    "Modèle Entité-Association",
+    "Entity–relationship model"
+  ],
+  [
+    "Cardinalités",
+    "Cardinalities"
+  ],
+  [
+    "Normalisation",
+    "Normalization"
+  ],
+  [
+    "Cette étude de cas a été réalisée dans la ressource « Qualité et au-delà du relationnel ». À partir d’un texte décrivant le fonctionnement du Cercle de Voile d’Épinal, j’ai analysé les besoins pour construire un modèle de données cohérent.",
+    "This case study was completed for the course “Quality and beyond relational databases”. Starting from a description of the Cercle de Voile d’Épinal’s operations, I analysed requirements to build a consistent data model."
+  ],
+  [
+    "Il fallait représenter les processus d’inscription, la désignation des moniteurs et l’affectation du matériel. La difficulté était de traduire les règles métier en entités, attributs, associations et cardinalités sans perdre la cohérence des affectations.",
+    "The model had to represent registration processes, instructor assignments and equipment allocation. The challenge was to translate business rules into entities, attributes, relationships and cardinalities while keeping assignments consistent."
+  ],
+  [
+    "J’ai mené l’analyse du texte, identifié les entités et les relations pertinentes, puis comparé différentes possibilités de modélisation. J’ai interrogé les cardinalités et les contraintes d’inscription afin de justifier les choix de conception.",
+    "I analysed the source description, identified the relevant entities and relationships, and compared modelling alternatives. I examined cardinalities and registration constraints to justify design decisions."
+  ],
+  [
+    "Le travail mobilise l’analyse grammaticale des besoins, les modèles Entité-Association et les associations complexes. Dans cette ressource, j’ai également travaillé sur les dépendances fonctionnelles, la normalisation et l’implémentation de modèles sous MySQL Workbench.",
+    "The work uses grammatical analysis of requirements, entity–relationship models and complex relationships. In this course, I also worked on functional dependencies, normalization and model implementation in MySQL Workbench."
+  ],
+  [
+    "Les associations ternaires et pentanaires étudiées dans la ressource m’ont amenée à comparer des solutions parfois proches. L’enjeu était de choisir une représentation fidèle au fonctionnement réel, plutôt que d’appliquer mécaniquement des règles de modélisation.",
+    "The ternary and five-way relationships studied in the course required me to compare alternatives that sometimes appeared similar. The goal was to represent real operations faithfully rather than apply modelling rules mechanically."
+  ],
+  [
+    "Cette étude m’a appris qu’une bonne modélisation commence par la compréhension du métier. J’ai développé mon esprit critique, ma rigueur et ma capacité à expliquer les choix d’un modèle avant de commencer l’implémentation technique.",
+    "This case study taught me that good modelling starts with understanding the business. I developed critical thinking, methodological rigour and the ability to explain model choices before beginning technical implementation."
+  ],
+  [
+    "15 / Bases de données",
+    "15 / Databases"
+  ],
+  [
+    "Approvisionnement d’une papeterie",
+    "Paper mill supply management"
+  ],
+  [
+    "Approvisionnement d’une papeterie - Wendy Patrícia",
+    "Paper mill supply management - Wendy Patrícia"
+  ],
+  [
+    "Modélisation des données d’une chaîne d’approvisionnement impliquant fournisseurs, contrats d’achat, ports, sociétés portuaires et transporteurs.",
+    "Data modelling for a supply chain involving suppliers, purchase contracts, ports, port companies and carriers."
+  ],
+  [
+    "Dépendances fonctionnelles",
+    "Functional dependencies"
+  ],
+  [
+    "Cette étude de cas sur l’approvisionnement d’une papeterie fait partie de la ressource « Qualité et au-delà du relationnel ». Elle aborde une problématique industrielle dans laquelle plusieurs acteurs et processus logistiques interagissent.",
+    "This case study on paper mill supplies is part of the course “Quality and beyond relational databases”. It addresses an industrial scenario involving multiple stakeholders and logistics processes."
+  ],
+  [
+    "Le modèle doit représenter les fournisseurs, les contrats d’achat, les ports, les sociétés portuaires, les transporteurs et leurs interactions. La diversité des acteurs exige une analyse précise des relations et des contraintes métier.",
+    "The model must represent suppliers, purchase contracts, ports, port companies, carriers and their interactions. This variety of stakeholders requires careful analysis of relationships and business constraints."
+  ],
+  [
+    "J’ai travaillé sur l’analyse des besoins et la modélisation des acteurs et des opérations logistiques. Cette démarche m’a conduite à examiner les associations et les cardinalités nécessaires pour représenter un système riche en relations.",
+    "I worked on requirements analysis and modelling stakeholders and logistics operations. This led me to examine the relationships and cardinalities needed to represent a system with many interconnected elements."
+  ],
+  [
+    "Le travail s’appuie sur la modélisation Entité-Association, les dépendances fonctionnelles et les règles de normalisation. L’objectif est d’identifier les anomalies potentielles et de corriger les dépendances partielles ou transitives afin de préserver la cohérence des données.",
+    "The work draws on entity–relationship modelling, functional dependencies and normalization rules. The aim is to identify potential anomalies and correct partial or transitive dependencies to preserve data consistency."
+  ],
+  [
+    "La complexité vient des interactions simultanées entre les acteurs et les processus métier. Il faut prendre du recul sur les besoins et comparer les représentations possibles avant de retenir un modèle cohérent.",
+    "The complexity comes from simultaneous interactions between stakeholders and business processes. It requires stepping back from individual requirements and comparing possible representations before choosing a consistent model."
+  ],
+  [
+    "Cette étude a renforcé ma compréhension des formes normales et de leur utilité concrète. J’ai appris à aborder un système d’information industriel avec méthode et à considérer la qualité de la conception comme une condition de la fiabilité des données.",
+    "This case study strengthened my understanding of normal forms and their practical value. I learned to approach an industrial information system methodically and to see design quality as a condition for reliable data."
+  ],
+  [
+    "16 / Bases de données",
+    "16 / Databases"
   ]
 ];

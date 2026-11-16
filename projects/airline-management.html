@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Une mini-application Java connectée à MySQL avec JDBC pour gérer les avions, les pilotes, les vols, les passagers et les réservations.">
+  <title>Gestion d’une compagnie aérienne - Wendy Patrícia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+      <button class="menu-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links">
+        <a href="../index.html#about">À propos</a>
+        <a href="../index.html#focus">Mes réalisations</a>
+        <a href="../projects.html">Projets</a>
+        <a href="../index.html#skills">Compétences</a>
+        <a href="../index.html#contact" class="nav-cta">Discutons</a>
+      </div>
+      <button class="language-toggle" type="button" lang="en" aria-label="Switch to English" title="Switch to English">EN</button>
+    </nav>
+  </header>
+  <main>
+    <section class="case-hero container">
+      <a class="back" href="../projects.html">← Tous les projets</a>
+      <p class="eyebrow">Bases de données / UE4 - Gérer</p>
+      <h1>Gestion d’une compagnie aérienne</h1>
+      <p class="case-lead">Une mini-application Java connectée à MySQL avec JDBC pour gérer les avions, les pilotes, les vols, les passagers et les réservations.</p>
+      <div class="tags"><span>Java</span><span>JDBC</span><span>MySQL</span><span>Architecture DAO</span></div>
+    </section>
+    <section class="case-body container">
+      <aside>
+        <p class="section-label">Étude de cas</p>
+        <span>BUT Informatique · UE4 - Gérer</span>
+      </aside>
+      <article>
+        <h2>Contexte</h2>
+        <p>Ce projet a été réalisé dans le cadre de la ressource « SQL dans un langage de programmation » du BUT Informatique. L’objectif était de relier une application Java à une base relationnelle, de gérer les connexions et de transformer les résultats SQL en objets Java.</p>
+
+        <h2>Problématique</h2>
+        <p>La gestion d’une compagnie aérienne nécessite de manipuler plusieurs entités liées. Une réservation relie notamment un passager à un vol : les clés étrangères et les jointures doivent préserver la cohérence des données tout en permettant les opérations de création, de lecture, de modification et de suppression.</p>
+
+        <h2>Ma contribution</h2>
+        <p>J’ai développé les classes métier représentant les avions, les pilotes, les vols, les passagers et les réservations, ainsi que les classes DAO dédiées aux opérations CRUD. Cette séparation des responsabilités permet de distinguer les données métier des opérations d’accès à la base.</p>
+
+        <h2>Approche technique</h2>
+        <p>J’ai utilisé Connection, Statement, PreparedStatement et ResultSet pour communiquer avec MySQL et récupérer les résultats dans l’application. Les requêtes paramétrées avec PreparedStatement permettent de manipuler les saisies utilisateur en limitant les risques d’injection SQL.</p>
+
+        <h2>Résultat</h2>
+        <p>La mini-application met en pratique les opérations CRUD sur plusieurs tables liées et une architecture organisée en modèles et DAO. Elle concrétise le lien entre la programmation Java et les mécanismes d’une base de données relationnelle.</p>
+
+        <h2>Ce que j’ai appris</h2>
+        <p>J’ai appris à intégrer SQL dans un programme Java, à convertir les résultats en objets, à gérer les relations entre tables et à structurer les accès aux données. Ce projet a aussi renforcé ma rigueur et ma compréhension de la sécurité des requêtes.</p>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+        <p>Étudiante en informatique · Développeuse</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026</span>
+        <a href="#">Retour en haut ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../translations.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
