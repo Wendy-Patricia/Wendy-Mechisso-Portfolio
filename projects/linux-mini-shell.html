@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Un interpréteur de commandes sous Linux : processus, commandes internes, redirections et tubes de communication.">
+  <title>Mini-shell sous Linux - Wendy Patrícia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+      <button class="menu-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links">
+        <a href="../index.html#about">À propos</a>
+        <a href="../index.html#focus">Mes réalisations</a>
+        <a href="../projects.html">Projets</a>
+        <a href="../index.html#skills">Compétences</a>
+        <a href="../index.html#contact" class="nav-cta">Discutons</a>
+      </div>
+      <button class="language-toggle" type="button" lang="en" aria-label="Switch to English" title="Switch to English">EN</button>
+    </nav>
+  </header>
+  <main>
+    <section class="case-hero container">
+      <a class="back" href="../projects.html">← Tous les projets</a>
+      <p class="eyebrow">Systèmes / UE3 - Administrer</p>
+      <h1>Mini-shell sous Linux</h1>
+      <p class="case-lead">Un interpréteur de commandes sous Linux : processus, commandes internes, redirections et tubes de communication.</p>
+      <div class="tags"><span>Linux</span><span>Unix</span><span>Processus</span><span>Appels système</span></div>
+    </section>
+    <section class="case-body container">
+      <aside>
+        <p class="section-label">Étude de cas</p>
+        <span>BUT Informatique · UE3 - Administrer</span>
+      </aside>
+      <article>
+        <h2>Contexte</h2>
+        <p>Ce projet a été réalisé dans la ressource « Programmation système » du BUT Informatique. L’objectif était de comprendre comment un programme interagit avec le système d’exploitation et utilise ses ressources : processus, fichiers, signaux et communication entre programmes.</p>
+
+        <h2>Problématique</h2>
+        <p>Un shell doit lire une commande, l’interpréter, lancer son exécution, gérer les erreurs et retourner un résultat. Il faut également comprendre le cycle de vie des processus et coordonner les échanges lorsque plusieurs commandes communiquent.</p>
+
+        <h2>Ma contribution</h2>
+        <p>J’ai réalisé un mini-shell mettant en œuvre la gestion des processus, l’exécution des commandes avec exec, les commandes internes, les redirections d’entrée et de sortie ainsi que les tubes de communication entre processus.</p>
+
+        <h2>Approche technique</h2>
+        <p>Le travail mobilise les mécanismes Unix/Linux, notamment fork() pour la création de processus et exec pour l’exécution des commandes. Les redirections relient les commandes aux entrées et sorties souhaitées, tandis que les tubes permettent de faire communiquer les processus.</p>
+
+        <h2>Difficultés</h2>
+        <p>La compréhension des processus fils, des signaux et de la synchronisation a demandé une grande rigueur. Pour progresser, j’ai multiplié les tests sous Linux, observé les comportements des programmes et analysé les résultats afin de mieux visualiser l’exécution simultanée et les accès concurrents aux ressources.</p>
+
+        <h2>Ce que j’ai appris</h2>
+        <p>Ce projet m’a permis de comprendre les mécanismes derrière un terminal que j’utilisais au quotidien. J’ai renforcé mes compétences en programmation bas niveau, ma compréhension d’Unix/Linux et ma capacité à analyser les interactions entre une application et le système d’exploitation.</p>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+        <p>Étudiante en informatique · Développeuse</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026</span>
+        <a href="#">Retour en haut ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../translations.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

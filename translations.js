@@ -1299,5 +1299,181 @@ window.portfolioTranslations = [
   [
     "16 / Bases de données",
     "16 / Databases"
+  ],
+  [
+    "Mini-shell sous Linux",
+    "Linux mini-shell"
+  ],
+  [
+    "Mini-shell sous Linux - Wendy Patrícia",
+    "Linux mini-shell - Wendy Patrícia"
+  ],
+  [
+    "Un interpréteur de commandes sous Linux : processus, commandes internes, redirections et tubes de communication.",
+    "A Linux command interpreter covering processes, built-in commands, redirections and communication pipes."
+  ],
+  [
+    "Systèmes / UE3 - Administrer",
+    "Systems / UE3 - Administer"
+  ],
+  [
+    "BUT Informatique · UE3 - Administrer",
+    "BUT Informatique · UE3 - Administer"
+  ],
+  [
+    "Linux",
+    "Linux"
+  ],
+  [
+    "Unix",
+    "Unix"
+  ],
+  [
+    "Processus",
+    "Processes"
+  ],
+  [
+    "Appels système",
+    "System calls"
+  ],
+  [
+    "Ce projet a été réalisé dans la ressource « Programmation système » du BUT Informatique. L’objectif était de comprendre comment un programme interagit avec le système d’exploitation et utilise ses ressources : processus, fichiers, signaux et communication entre programmes.",
+    "This project was developed for the BUT Informatique systems programming course. The goal was to understand how a program interacts with the operating system and uses its resources: processes, files, signals and communication between programs."
+  ],
+  [
+    "Un shell doit lire une commande, l’interpréter, lancer son exécution, gérer les erreurs et retourner un résultat. Il faut également comprendre le cycle de vie des processus et coordonner les échanges lorsque plusieurs commandes communiquent.",
+    "A shell must read a command, interpret it, launch its execution, handle errors and return a result. It also requires an understanding of process lifecycles and the coordination of exchanges when multiple commands communicate."
+  ],
+  [
+    "J’ai réalisé un mini-shell mettant en œuvre la gestion des processus, l’exécution des commandes avec exec, les commandes internes, les redirections d’entrée et de sortie ainsi que les tubes de communication entre processus.",
+    "I built a mini-shell implementing process management, command execution with exec, built-in commands, input and output redirection, and pipes for communication between processes."
+  ],
+  [
+    "Le travail mobilise les mécanismes Unix/Linux, notamment fork() pour la création de processus et exec pour l’exécution des commandes. Les redirections relient les commandes aux entrées et sorties souhaitées, tandis que les tubes permettent de faire communiquer les processus.",
+    "The work uses Unix/Linux mechanisms, including fork() for process creation and exec for command execution. Redirections connect commands to the required inputs and outputs, while pipes allow processes to communicate."
+  ],
+  [
+    "La compréhension des processus fils, des signaux et de la synchronisation a demandé une grande rigueur. Pour progresser, j’ai multiplié les tests sous Linux, observé les comportements des programmes et analysé les résultats afin de mieux visualiser l’exécution simultanée et les accès concurrents aux ressources.",
+    "Understanding child processes, signals and synchronization required considerable care. I made progress by repeatedly testing under Linux, observing program behaviour and analysing results to better understand simultaneous execution and concurrent access to resources."
+  ],
+  [
+    "Ce projet m’a permis de comprendre les mécanismes derrière un terminal que j’utilisais au quotidien. J’ai renforcé mes compétences en programmation bas niveau, ma compréhension d’Unix/Linux et ma capacité à analyser les interactions entre une application et le système d’exploitation.",
+    "This project helped me understand the mechanisms behind a terminal I used every day. It strengthened my low-level programming skills, understanding of Unix/Linux and ability to analyse interactions between an application and the operating system."
+  ],
+  [
+    "17 / Systèmes",
+    "17 / Systems"
+  ],
+  [
+    "Architecture réseau avec Packet Tracer",
+    "Network architecture with Packet Tracer"
+  ],
+  [
+    "Architecture réseau avec Packet Tracer - Wendy Patrícia",
+    "Network architecture with Packet Tracer - Wendy Patrícia"
+  ],
+  [
+    "Conception et analyse d’une architecture réseau simple avec Cisco Packet Tracer pour comprendre les échanges entre machines.",
+    "Design and analysis of a simple network architecture with Cisco Packet Tracer to understand communication between machines."
+  ],
+  [
+    "Cisco Packet Tracer",
+    "Cisco Packet Tracer"
+  ],
+  [
+    "TCP/IP",
+    "TCP/IP"
+  ],
+  [
+    "Adressage IP",
+    "IP addressing"
+  ],
+  [
+    "Diagnostic réseau",
+    "Network diagnostics"
+  ],
+  [
+    "Cette simulation a été réalisée dans la ressource « Architecture des réseaux ». Les enseignements portaient sur les modèles réseau, l’adressage IP, le routage et les protocoles TCP/IP qui permettent aux machines d’échanger des données.",
+    "This simulation was completed for the network architecture course. The course covered network models, IP addressing, routing and the TCP/IP protocols that enable machines to exchange data."
+  ],
+  [
+    "L’objectif était de comprendre le rôle des équipements et des connexions dans une architecture réseau simple. Il fallait relier les notions théoriques aux échanges entre hôtes et expliquer comment les données circulent entre différentes machines.",
+    "The goal was to understand the role of equipment and connections in a simple network architecture. This required connecting theory to exchanges between hosts and explaining how data travels between machines."
+  ],
+  [
+    "J’ai conçu et analysé une architecture réseau simple à l’aide de Cisco Packet Tracer. Le travail portait sur les équipements, les connexions entre hôtes et le rôle des hubs dans la transmission des données.",
+    "I designed and analysed a simple network architecture using Cisco Packet Tracer. The work focused on network equipment, connections between hosts and the role of hubs in data transmission."
+  ],
+  [
+    "La simulation m’a permis de visualiser les échanges et de mieux comprendre les mécanismes étudiés en cours. En complément, les exercices de configuration et de diagnostic réseau utilisaient ping, traceroute et Wireshark pour observer les communications et analyser leur fonctionnement.",
+    "The simulation allowed me to visualize exchanges and better understand the mechanisms studied in class. Complementary network configuration and diagnostic exercises used ping, traceroute and Wireshark to observe communications and analyse how they work."
+  ],
+  [
+    "L’adressage, les masques, les calculs de sous-réseaux et le routage exigeaient une démarche rigoureuse. J’ai progressé en répétant les exercices et en associant les différentes couches et les protocoles à leur rôle concret dans une communication.",
+    "Addressing, masks, subnet calculations and routing required a rigorous approach. I improved by repeating exercises and connecting network layers and protocols to their practical role in communication."
+  ],
+  [
+    "Ce travail a renforcé ma capacité à identifier les composants d’une infrastructure, à comprendre les communications entre machines et à analyser des problèmes de connexion. Il m’a donné une vision plus concrète des réseaux sur lesquels reposent les services connectés.",
+    "This work strengthened my ability to identify infrastructure components, understand communication between machines and analyse connection problems. It gave me a more practical understanding of the networks that connected services rely on."
+  ],
+  [
+    "18 / Systèmes",
+    "18 / Systems"
+  ],
+  [
+    "Administration d’environnements virtuels",
+    "Virtual environment administration"
+  ],
+  [
+    "Administration d’environnements virtuels - Wendy Patrícia",
+    "Virtual environment administration - Wendy Patrícia"
+  ],
+  [
+    "Travaux pratiques de création et d’administration de machines virtuelles : isolation, ressources matérielles et configuration réseau.",
+    "Practical work creating and administering virtual machines: isolation, hardware resources and network configuration."
+  ],
+  [
+    "Machines virtuelles",
+    "Virtual machines"
+  ],
+  [
+    "Hyperviseurs",
+    "Hypervisors"
+  ],
+  [
+    "Administration système",
+    "System administration"
+  ],
+  [
+    "Virtualisation",
+    "Virtualization"
+  ],
+  [
+    "Ces travaux pratiques ont été réalisés dans la ressource « Virtualisation ». J’ai étudié la création et l’administration de machines virtuelles, les hyperviseurs et l’isolation des environnements, ainsi que leur intérêt pour le déploiement et la gestion des systèmes.",
+    "This practical work was completed for the virtualization course. I studied virtual machine creation and administration, hypervisors and environment isolation, and their value for deploying and managing systems."
+  ],
+  [
+    "Faire fonctionner plusieurs systèmes d’exploitation sur une même machine physique demande de comprendre la répartition des ressources et les interactions entre l’hôte et les machines virtuelles. Les environnements doivent rester indépendants tout en disposant de la connectivité nécessaire aux manipulations.",
+    "Running several operating systems on one physical machine requires an understanding of resource allocation and interactions between the host and virtual machines. Environments must remain independent while providing the connectivity needed for the exercises."
+  ],
+  [
+    "J’ai créé et administré des environnements virtuels, testé différentes configurations et multiplié les manipulations pour comprendre leur fonctionnement. Ces environnements isolés m’ont permis d’expérimenter sans intervenir directement sur le système principal.",
+    "I created and administered virtual environments, tested different configurations and repeated practical exercises to understand how they work. These isolated environments allowed me to experiment without directly modifying the main system."
+  ],
+  [
+    "Le travail portait sur la configuration des machines virtuelles, la gestion des ressources matérielles et les différents modes réseau. J’ai étudié les relations entre l’hôte et les systèmes invités ainsi que les avantages de l’isolation et de la mutualisation des ressources.",
+    "The work focused on configuring virtual machines, managing hardware resources and understanding different network modes. I studied the relationships between host and guest systems and the benefits of isolation and resource sharing."
+  ],
+  [
+    "La configuration initiale des environnements, les modes réseau et l’attribution des ressources étaient les principaux points à maîtriser. Tester plusieurs configurations m’a aidée à relier ces paramètres au comportement observé dans les machines virtuelles.",
+    "Initial environment configuration, network modes and resource allocation were the main areas to master. Testing several configurations helped me connect these settings to the behaviour observed in virtual machines."
+  ],
+  [
+    "J’ai développé mes compétences en administration système, en déploiement d’environnements virtuels et en gestion des ressources. Ces travaux m’ont permis de comprendre certaines bases du cloud computing et m’ont donné envie d’approfondir les infrastructures cloud et leur architecture.",
+    "I developed skills in system administration, virtual environment deployment and resource management. This work helped me understand some foundations of cloud computing and motivated me to explore cloud infrastructure and architecture further."
+  ],
+  [
+    "19 / Systèmes",
+    "19 / Systems"
   ]
 ];
