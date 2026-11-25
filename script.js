@@ -44,8 +44,27 @@ document.addEventListener("DOMContentLoaded",()=> {
   });
 
   const menu=document.querySelector(".menu-toggle"), links=document.querySelector(".nav-links");
-  if(menu&&links){menu.addEventListener("click",()=>{const open=links.classList.toggle("open");menu.setAttribute("aria-expanded",open)})}
-  document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>{links?.classList.remove("open");menu?.setAttribute("aria-expanded","false")}));
+  const closeMenu = () => {
+    links?.classList.remove("open");
+    menu?.setAttribute("aria-expanded", "false");
+  };
+  if (menu && links) {
+    menu.addEventListener("click", () => {
+      const open = links.classList.toggle("open");
+      menu.setAttribute("aria-expanded", String(open));
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && links.classList.contains("open")) {
+        closeMenu();
+        menu.focus();
+      }
+    });
+    document.addEventListener("click", event => {
+      if (!menu.contains(event.target) && !links.contains(event.target)) closeMenu();
+    });
+    window.matchMedia("(max-width: 1050px)").addEventListener("change", closeMenu);
+  }
+  document.querySelectorAll(".nav-links a").forEach(a => a.addEventListener("click", closeMenu));
 
   document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
     document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active")); btn.classList.add("active");
