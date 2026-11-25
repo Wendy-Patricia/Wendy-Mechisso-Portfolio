@@ -1577,3 +1577,8 @@ window.portfolioTranslations = [
     "20 / Web"
   ]
 ];
+window.portfolioTranslations.push(
+  ["Une plateforme de gestion des opérations pour ANETSYS.", "An operations management platform for ANETSYS."],
+  ["Interface de PortailOps", "PortailOps interface"],
+  ["Interface de Pastel Player", "Pastel Player interface"]
+);
