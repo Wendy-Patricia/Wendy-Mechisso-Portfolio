@@ -1475,5 +1475,105 @@ window.portfolioTranslations = [
   [
     "19 / Systèmes",
     "19 / Systems"
+  ],
+  [
+    "Social Media Awards - Wendy Patrícia",
+    "Social Media Awards - Wendy Patrícia"
+  ],
+  [
+    "Une plateforme PHP/MySQL pour proposer des créateurs de contenu, gérer leurs candidatures et voter pour ses favoris par catégorie.",
+    "A PHP/MySQL platform for nominating content creators, managing their applications and voting for favourites by category."
+  ],
+  [
+    "Développement web / Plateforme de vote",
+    "Web development / Voting platform"
+  ],
+  [
+    "Projet en équipe · 2 contributrices",
+    "Team project · 2 contributors"
+  ],
+  [
+    "Interfaces publiques, administration et espace candidat",
+    "Public interfaces, administration and candidate area"
+  ],
+  [
+    "Social Media Awards (SMA) est une application web consacrée aux créateurs de contenu sur les réseaux sociaux. Elle réunit un site public, un espace électeur, un espace candidat et une administration pour organiser les éditions du concours, examiner les candidatures, gérer les nominations et consulter les résultats.",
+    "Social Media Awards (SMA) is a web application dedicated to social media content creators. It brings together a public website, a voter area, a candidate area and an administration area to organise award editions, review applications, manage nominations and view results."
+  ],
+  [
+    "Développé avec Eunice Ligeiro, le projet devait relier les différentes étapes d’un concours dans une même application : création de compte, dépôt de candidature, validation administrative, nomination, vote et résultats. L’objectif était de proposer des parcours adaptés à chaque rôle et de relier les catégories et les périodes de participation à une édition précise.",
+    "Developed with Eunice Ligeiro, the project aimed to connect the stages of an awards competition in one application: account creation, application submission, administrative review, nomination, voting and results. The goal was to provide a suitable journey for each role and associate categories and participation periods with a specific edition."
+  ],
+  [
+    "J’ai créé la structure initiale du dépôt, la page d’accueil, la page de contact, le formulaire de création de compte ainsi que le header et le footer partagés. J’ai ensuite réorganisé le projet autour de dossiers de contrôleurs, modèles, services et vues pour mieux séparer l’affichage, les traitements et l’accès aux données.",
+    "I created the initial repository structure, homepage, contact page, account creation form, and shared header and footer. I then reorganised the project into controller, model, service and view directories to better separate presentation, processing and data access."
+  ],
+  [
+    "Mes contributions ont surtout porté sur l’espace administrateur et sa connexion à MySQL : tableau de bord, gestion des catégories et logique de gestion des éditions. J’ai également contribué à finaliser l’espace candidat, les candidatures et les nominations, puis corrigé des problèmes d’intégration après les fusions de branches.",
+    "My contributions focused primarily on the administration area and its MySQL integration: the dashboard, category management and edition management logic. I also helped complete the candidate area, applications and nominations, then fixed integration issues after branch merges."
+  ],
+  [
+    "Étapes de développement",
+    "Development details"
+  ],
+  [
+    "La première étape a consisté à construire les pages publiques et les composants partagés, avec des fichiers CSS distincts pour les différentes interfaces. Le formulaire d’inscription a ensuite complété ce premier socle.",
+    "The first stage was to build the public pages and shared components, with separate CSS files for the different interfaces. The registration form then completed this initial foundation."
+  ],
+  [
+    "Le développement s’est poursuivi avec la structuration MVC, la configuration de la base de données et la mise en place des espaces administrateur et candidat. Les formulaires de gestion ont été reliés aux services PHP et aux données des catégories et des éditions.",
+    "Development continued with the MVC structure, database configuration, and administration and candidate areas. Management forms were connected to PHP services and the category and edition data."
+  ],
+  [
+    "La dernière phase a porté sur l’intégration des contributions de l’équipe : harmonisation des chemins, adaptation des écrans à la base réelle, finalisation des candidatures et correction des erreurs liées aux catégories et aux éditions.",
+    "The final stage focused on integrating the team’s contributions: aligning paths, adapting screens to the actual database, completing application management, and fixing category and edition issues."
+  ],
+  [
+    "L’application utilise PHP, MySQL, HTML, CSS et JavaScript, avec une organisation inspirée du modèle MVC et une couche de services pour la logique métier. Les contrôleurs traitent les actions, les modèles représentent les données et les vues composent les interfaces. Les échanges avec MySQL passent notamment par PDO et des requêtes préparées.",
+    "The application uses PHP, MySQL, HTML, CSS and JavaScript, with an MVC-inspired structure and a service layer for business logic. Controllers handle actions, models represent data and views compose the interfaces. MySQL access uses PDO and prepared statements, among other mechanisms."
+  ],
+  [
+    "Le modèle relationnel relie comptes, candidats, éditions, catégories, candidatures, nominations et votes. Les sessions et les contrôles de rôle encadrent l’accès aux espaces. Le parcours de vote vérifie la période autorisée et la participation antérieure dans la catégorie ; les pages de résultats agrègent les votes par nomination et par édition.",
+    "The relational model connects accounts, candidates, editions, categories, applications, nominations and votes. Sessions and role checks govern access to each area. The voting flow checks the permitted period and previous participation in the category; result pages aggregate votes by nomination and edition."
+  ],
+  [
+    "Difficultés et solutions",
+    "Challenges and solutions"
+  ],
+  [
+    "Le passage des premières interfaces à une application connectée a demandé d’aligner les noms de champs, les relations SQL et les données attendues par les vues. J’ai repris les traitements des catégories et des éditions et adapté les formulaires et les services pour les faire fonctionner ensemble.",
+    "Moving from the initial interfaces to a database-connected application required aligning field names, SQL relationships and the data expected by views. I revised category and edition processing and adapted forms and services so they could work together."
+  ],
+  [
+    "La réorganisation des dossiers et les fusions de branches ont aussi provoqué des problèmes de chemins et d’intégration des composants partagés. J’ai corrigé les références au header, au footer et aux espaces internes, puis consolidé les parcours candidat et administrateur. Ces corrections ont souligné l’importance de conventions communes dans un projet en équipe.",
+    "Directory restructuring and branch merges also caused path issues and problems integrating shared components. I corrected references to the header, footer and internal areas, then consolidated the candidate and administration flows. These fixes highlighted the importance of shared conventions in a team project."
+  ],
+  [
+    "Résultats",
+    "Results"
+  ],
+  [
+    "Le dépôt réunit les pages publiques, la gestion des comptes, le dépôt et l’examen des candidatures, la gestion des éditions et des catégories, les nominations, le vote et les résultats. Ma contribution a permis de faire évoluer la structure initiale vers des espaces de gestion reliés à la base de données, en collaboration avec ma coéquipière.",
+    "The repository brings together public pages, account management, application submission and review, edition and category management, nominations, voting and results. Working with my teammate, my contribution helped evolve the initial structure into management areas connected to the database."
+  ],
+  [
+    "Le résultat présenté est un prototype de démonstration. Le mécanisme nommé « chiffrement » dans le modèle de vote utilise un encodage Base64 de données JSON ; une utilisation réelle nécessiterait de remplacer cette simulation et de valider la sécurité du parcours de vote.",
+    "The result presented is a demonstration prototype. The mechanism called “encryption” in the voting model uses Base64 encoding of JSON data; real-world use would require replacing this simulation and validating the security of the voting flow."
+  ],
+  [
+    "Ce projet m’a permis de progresser en PHP orienté objet, en organisation MVC et en intégration de données relationnelles. J’ai appris à relier une interface à des règles métier concrètes, à suivre un problème entre formulaire, service et base de données, et à prendre en compte les rôles et les dates dans les parcours utilisateurs.",
+    "This project helped me develop my object-oriented PHP, MVC organisation and relational data integration skills. I learned to connect interfaces to concrete business rules, trace an issue across a form, service and database, and account for roles and dates in user journeys."
+  ],
+  [
+    "Le travail avec Git et les branches partagées m’a aussi appris à intégrer des contributions, à résoudre des écarts de structure et à stabiliser une application après fusion. Enfin, le parcours de vote m’a sensibilisée à la différence entre une simulation technique et les garanties nécessaires à un système utilisé en conditions réelles.",
+    "Working with Git and shared branches also taught me how to integrate contributions, resolve structural differences and stabilise an application after merging. Finally, the voting flow made me more aware of the difference between a technical simulation and the guarantees required by a system used in real conditions."
+  ],
+  [
+    "Consulter le code source",
+    "View source code"
+  ],
+  [
+    "20 / Web",
+    "20 / Web"
   ]
 ];

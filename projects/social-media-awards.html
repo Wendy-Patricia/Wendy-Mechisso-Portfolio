@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Une plateforme PHP/MySQL pour proposer des créateurs de contenu, gérer leurs candidatures et voter pour ses favoris par catégorie.">
+  <title>Social Media Awards - Wendy Patrícia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+      <button class="menu-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links">
+        <a href="../index.html#about">À propos</a>
+        <a href="../index.html#focus">Mes réalisations</a>
+        <a href="../projects.html">Projets</a>
+        <a href="../index.html#skills">Compétences</a>
+        <a href="../index.html#contact" class="nav-cta">Discutons</a>
+      </div>
+      <button class="language-toggle" type="button" lang="en" aria-label="Switch to English" title="Switch to English">EN</button>
+    </nav>
+  </header>
+  <main>
+    <section class="case-hero container">
+      <a class="back" href="../projects.html">← Tous les projets</a>
+      <p class="eyebrow">Développement web / Plateforme de vote</p>
+      <h1>Social Media Awards</h1>
+      <p class="case-lead">Une plateforme PHP/MySQL pour proposer des créateurs de contenu, gérer leurs candidatures et voter pour ses favoris par catégorie.</p>
+      <div class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML / CSS</span><span>MVC</span><span>Git</span></div>
+    </section>
+    <section class="case-body container">
+      <aside>
+        <p class="section-label">Étude de cas</p>
+        <p>Projet en équipe · 2 contributrices</p>
+        <p>Interfaces publiques, administration et espace candidat</p>
+      </aside>
+      <article>
+        <h2>Présentation</h2>
+        <p>Social Media Awards (SMA) est une application web consacrée aux créateurs de contenu sur les réseaux sociaux. Elle réunit un site public, un espace électeur, un espace candidat et une administration pour organiser les éditions du concours, examiner les candidatures, gérer les nominations et consulter les résultats.</p>
+
+        <h2>Contexte et objectifs</h2>
+        <p>Développé avec Eunice Ligeiro, le projet devait relier les différentes étapes d’un concours dans une même application : création de compte, dépôt de candidature, validation administrative, nomination, vote et résultats. L’objectif était de proposer des parcours adaptés à chaque rôle et de relier les catégories et les périodes de participation à une édition précise.</p>
+
+        <h2>Ma contribution</h2>
+        <p>J’ai créé la structure initiale du dépôt, la page d’accueil, la page de contact, le formulaire de création de compte ainsi que le header et le footer partagés. J’ai ensuite réorganisé le projet autour de dossiers de contrôleurs, modèles, services et vues pour mieux séparer l’affichage, les traitements et l’accès aux données.</p>
+        <p>Mes contributions ont surtout porté sur l’espace administrateur et sa connexion à MySQL : tableau de bord, gestion des catégories et logique de gestion des éditions. J’ai également contribué à finaliser l’espace candidat, les candidatures et les nominations, puis corrigé des problèmes d’intégration après les fusions de branches.</p>
+
+        <h2>Étapes de développement</h2>
+        <p>La première étape a consisté à construire les pages publiques et les composants partagés, avec des fichiers CSS distincts pour les différentes interfaces. Le formulaire d’inscription a ensuite complété ce premier socle.</p>
+        <p>Le développement s’est poursuivi avec la structuration MVC, la configuration de la base de données et la mise en place des espaces administrateur et candidat. Les formulaires de gestion ont été reliés aux services PHP et aux données des catégories et des éditions.</p>
+        <p>La dernière phase a porté sur l’intégration des contributions de l’équipe : harmonisation des chemins, adaptation des écrans à la base réelle, finalisation des candidatures et correction des erreurs liées aux catégories et aux éditions.</p>
+
+        <h2>Approche technique</h2>
+        <p>L’application utilise PHP, MySQL, HTML, CSS et JavaScript, avec une organisation inspirée du modèle MVC et une couche de services pour la logique métier. Les contrôleurs traitent les actions, les modèles représentent les données et les vues composent les interfaces. Les échanges avec MySQL passent notamment par PDO et des requêtes préparées.</p>
+        <p>Le modèle relationnel relie comptes, candidats, éditions, catégories, candidatures, nominations et votes. Les sessions et les contrôles de rôle encadrent l’accès aux espaces. Le parcours de vote vérifie la période autorisée et la participation antérieure dans la catégorie ; les pages de résultats agrègent les votes par nomination et par édition.</p>
+
+        <h2>Difficultés et solutions</h2>
+        <p>Le passage des premières interfaces à une application connectée a demandé d’aligner les noms de champs, les relations SQL et les données attendues par les vues. J’ai repris les traitements des catégories et des éditions et adapté les formulaires et les services pour les faire fonctionner ensemble.</p>
+        <p>La réorganisation des dossiers et les fusions de branches ont aussi provoqué des problèmes de chemins et d’intégration des composants partagés. J’ai corrigé les références au header, au footer et aux espaces internes, puis consolidé les parcours candidat et administrateur. Ces corrections ont souligné l’importance de conventions communes dans un projet en équipe.</p>
+
+        <h2>Résultats</h2>
+        <p>Le dépôt réunit les pages publiques, la gestion des comptes, le dépôt et l’examen des candidatures, la gestion des éditions et des catégories, les nominations, le vote et les résultats. Ma contribution a permis de faire évoluer la structure initiale vers des espaces de gestion reliés à la base de données, en collaboration avec ma coéquipière.</p>
+        <p>Le résultat présenté est un prototype de démonstration. Le mécanisme nommé « chiffrement » dans le modèle de vote utilise un encodage Base64 de données JSON ; une utilisation réelle nécessiterait de remplacer cette simulation et de valider la sécurité du parcours de vote.</p>
+
+        <h2>Ce que j’ai appris</h2>
+        <p>Ce projet m’a permis de progresser en PHP orienté objet, en organisation MVC et en intégration de données relationnelles. J’ai appris à relier une interface à des règles métier concrètes, à suivre un problème entre formulaire, service et base de données, et à prendre en compte les rôles et les dates dans les parcours utilisateurs.</p>
+        <p>Le travail avec Git et les branches partagées m’a aussi appris à intégrer des contributions, à résoudre des écarts de structure et à stabiliser une application après fusion. Enfin, le parcours de vote m’a sensibilisée à la différence entre une simulation technique et les garanties nécessaires à un système utilisé en conditions réelles.</p>
+        <div class="case-links">
+          <a class="project-link" href="https://github.com/Wendy-Patricia/Social-Media-Awards-" target="_blank" rel="noopener noreferrer"><span class="link-label">GitHub</span><strong>Consulter le code source</strong></a>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+        <p>Étudiante en informatique · Développeuse</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026</span>
+        <a href="#">Retour en haut ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../translations.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
