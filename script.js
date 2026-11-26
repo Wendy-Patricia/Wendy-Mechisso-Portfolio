@@ -36,7 +36,8 @@ document.addEventListener("DOMContentLoaded",()=> {
   };
   let savedLanguage = "fr";
   try { savedLanguage = localStorage.getItem("portfolio-language") || "fr"; } catch {}
-  setLanguage(savedLanguage);
+  // Pages without a language control retain their authored language.
+  if (languageButton) setLanguage(savedLanguage);
   languageButton?.addEventListener("click", () => {
     const next = document.documentElement.lang === "fr" ? "en" : "fr";
     setLanguage(next);

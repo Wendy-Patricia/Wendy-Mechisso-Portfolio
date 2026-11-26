@@ -1,0 +1,102 @@
+/* Biography-only layouts; colours, typefaces and navigation come from style.css. */
+.biography { font-size: 1rem; }
+.biography h1, .biography h2, .biography h3 { text-wrap: balance; }
+.biography h2 { font-size: clamp(2.25rem, 4vw, 3.6rem); line-height: 1.12; letter-spacing: -.055em; font-weight: 500; margin: 0 0 32px; }
+.biography h2 em, .bio-hero h1 em { color: var(--pink-dark); font-style: normal; }
+.bio-label { font: .875rem/1.7 var(--mono); color: var(--pink-dark); margin: 0 0 22px; }
+.bio-skip { position: fixed; top: 12px; left: 20px; z-index: 100; background: var(--ink); color: white; padding: 12px 20px; transform: translateY(-180%); }
+.bio-skip:focus { transform: none; }
+.bio-hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 50px 90px; padding-top: 80px; padding-bottom: 42px; align-items: center; }
+.bio-hero h1 { font-size: clamp(3.5rem, 6vw, 5.7rem); line-height: 1.02; letter-spacing: -.065em; font-weight: 500; margin: 24px 0 32px; }
+.bio-introduction { max-width: 510px; color: var(--muted); font-size: 1.125rem; line-height: 1.85; margin-bottom: 26px; }
+.bio-introduction strong { color: var(--ink); font-weight: 500; }
+.bio-portrait { margin: 0; align-self: center; }
+.bio-portrait img { display: block; width: 100%; height: clamp(430px, 43vw, 580px); object-fit: cover; object-position: center 45%; border-radius: 180px 180px 12px 12px; background: var(--pink); }
+.bio-portrait figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 5px 16px; font-size: .875rem; margin-top: 18px; color: var(--muted); }
+.bio-portrait figcaption span:first-child { color: var(--ink); }
+.bio-hero-foot { grid-column: 1 / -1; display: flex; justify-content: space-between; gap: 30px; padding-top: 28px; border-top: 1px solid var(--line); font-size: .9375rem; }
+.bio-hero-foot p { margin: 0; line-height: 1.8; }
+.bio-hero-foot span { color: var(--muted); }
+.bio-contents { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 30px; padding: 24px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: .9375rem; }
+.bio-contents > span { margin-right: auto; font: .875rem var(--mono); color: var(--muted); }
+.bio-contents a { padding: 8px 0; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 7px; }
+.bio-contents a:hover { color: var(--pink-dark); text-decoration-color: currentColor; }
+.bio-chapter, .bio-leap-inner { display: grid; grid-template-columns: 1fr 2.1fr; gap: 65px; padding-block: 105px; }
+.bio-margin { padding-top: 7px; }
+.bio-margin > p:last-child { color: var(--muted); font-size: .9375rem; margin-top: -12px; }
+.bio-prose { max-width: 700px; min-width: 0; }
+.bio-prose p { font-size: 1.125rem; line-height: 1.9; color: var(--muted); margin: 0 0 24px; }
+.bio-prose p:last-child { margin-bottom: 0; }
+.bio-prose .bio-lead { font-size: 1.375rem; line-height: 1.65; color: var(--ink); letter-spacing: -.015em; }
+.bio-chapter-lined { border-top: 1px solid var(--line); }
+.bio-leap { background: #fbeaf3; }
+.bio-route { grid-column: 2; display: flex; align-items: center; gap: 25px; color: var(--pink-dark); font: 1rem var(--mono); }
+.bio-route-line { height: 1px; background: #ca91ad; flex: 1; position: relative; }
+.bio-route-line::before, .bio-route-line::after { content: ''; position: absolute; top: -3px; width: 7px; height: 7px; border-radius: 50%; background: var(--pink-dark); }
+.bio-route-line::before { left: 0; }
+.bio-route-line::after { right: 0; }
+.bio-milestone { display: flex; align-items: center; gap: 35px; border-block: 1px solid var(--line); padding-block: 22px; margin: 38px 0; }
+.bio-milestone .bio-milestone-number { color: var(--pink-dark); font-size: clamp(5rem, 9vw, 7rem); font-weight: 500; line-height: 1; letter-spacing: -.08em; margin: 0; }
+.bio-milestone-number sup { font-size: .4em; vertical-align: super; }
+.bio-milestone p:last-child { color: var(--ink); line-height: 1.6; }
+.bio-milestone p span { display: inline-block; color: var(--muted); font-size: .9375rem; margin-top: 8px; }
+.bio-infrastructure { background: var(--ink); color: var(--bg); padding: 100px 0 55px; }
+.bio-infrastructure .bio-label { color: var(--pink); }
+.bio-infra-heading { max-width: 800px; }
+.bio-infra-heading h2 { font-size: clamp(2.6rem, 5vw, 4.5rem); }
+.bio-infra-heading h2 em { color: var(--pink); }
+.bio-infra-heading > p:last-child { font-size: 1.25rem; line-height: 1.8; color: #efd4e2; max-width: 660px; }
+.bio-infra-body { display: grid; grid-template-columns: .95fr 1fr; gap: 85px; margin-top: 65px; }
+.bio-infra-body .bio-prose p { color: #efd4e2; }
+.bio-questions > p:not(.bio-label) { border-top: 1px solid #86536f; padding-top: 23px; margin: 24px 0; font-size: 1.35rem; line-height: 1.55; letter-spacing: -.015em; }
+.bio-infra-statement { border-top: 1px solid #86536f; padding-top: 32px; margin: 55px 0 0; font-size: clamp(1.5rem, 2.8vw, 2.2rem); letter-spacing: -.03em; max-width: 100%; }
+.bio-study-list { list-style: none; padding: 0; margin: 30px 0; border-top: 1px solid var(--line); }
+.bio-study-list li { border-bottom: 1px solid var(--line); padding: 15px 0; font-size: 1.0625rem; }
+.bio-beyond { display: grid; grid-template-columns: .8fr 1.2fr; gap: 90px; border-top: 1px solid var(--line); padding-block: 85px 105px; }
+.bio-beyond-intro > p:last-child { color: var(--muted); line-height: 1.85; font-size: 1.125rem; max-width: 320px; }
+.bio-interests > div { border-top: 1px solid var(--line); padding: 24px 0; }
+.bio-interests > div:first-child { border-top: 0; padding-top: 0; }
+.bio-interests h3 { margin: 0 0 10px; font-size: 1.375rem; letter-spacing: -.025em; font-weight: 500; }
+.bio-interests p { color: var(--muted); font-size: 1.0625rem; line-height: 1.85; margin: 0; }
+.bio-closing { text-align: center; border-top: 1px solid var(--line); padding-block: 90px 110px; }
+.bio-closing h2 { max-width: 950px; margin-inline: auto; }
+.bio-closing > p:not(.bio-label) { max-width: 580px; margin-inline: auto; color: var(--muted); font-size: 1.125rem; line-height: 1.8; }
+.bio-closing .actions { justify-content: center; }
+.biography .footer { border-top: 1px solid var(--line); }
+/* Progressive enhancement: content remains visible without JavaScript. */
+@media (prefers-reduced-motion: no-preference) {
+  .bio-reveal { animation: bio-arrive .65s ease-out both; }
+  @keyframes bio-arrive { from { opacity: .35; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+}
+@media (max-width: 1050px) {
+  .bio-hero { gap: 40px; }
+  .bio-hero h1 { font-size: clamp(3.4rem, 6.7vw, 5rem); }
+  .bio-chapter, .bio-leap-inner { gap: 35px; grid-template-columns: .8fr 2fr; }
+  .bio-infra-body, .bio-beyond { gap: 45px; }
+}
+@media (max-width: 700px) {
+  .bio-hero { grid-template-columns: 1fr; padding-top: 45px; gap: 35px; }
+  .bio-hero h1 { font-size: clamp(3.15rem, 11vw, 4.8rem); }
+  .bio-portrait { width: min(100%, 400px); justify-self: center; }
+  .bio-portrait img { height: 460px; }
+  .bio-hero-foot { flex-direction: column; gap: 18px; }
+  .bio-contents { gap: 6px 22px; }
+  .bio-contents > span { flex-basis: 100%; margin-bottom: 8px; }
+  .bio-chapter, .bio-leap-inner { grid-template-columns: 1fr; gap: 25px; padding-block: 65px; }
+  .bio-margin > p:last-child { display: none; }
+  .bio-margin .bio-label { margin: 0; }
+  .bio-prose p { font-size: 1.0625rem; line-height: 1.85; }
+  .bio-prose .bio-lead { font-size: 1.25rem; }
+  .bio-route { grid-column: 1; gap: 18px; font-size: .875rem; margin-top: 10px; }
+  .bio-milestone { gap: 24px; }
+  .bio-infrastructure { padding-block: 65px 40px; }
+  .bio-infra-body { grid-template-columns: 1fr; gap: 30px; margin-top: 35px; }
+  .bio-infra-heading > p:last-child { font-size: 1.125rem; }
+  .bio-questions > p:not(.bio-label) { font-size: 1.25rem; }
+  .bio-infra-statement { margin-top: 35px; }
+  .bio-beyond { grid-template-columns: 1fr; padding-block: 65px; gap: 30px; }
+  .bio-beyond-intro > p:last-child { max-width: 100%; }
+  .bio-interests > div:first-child { border-top: 1px solid var(--line); padding-top: 24px; }
+  .bio-closing { padding-block: 65px; }
+  .biography .footer-links { flex-wrap: wrap; }
+}
