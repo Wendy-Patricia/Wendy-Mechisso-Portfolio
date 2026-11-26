@@ -6,8 +6,31 @@
   const previous = controls.querySelector('[data-carousel-prev]');
   const next = controls.querySelector('[data-carousel-next]');
   const status = controls.querySelector('.carousel-status');
+  const autoplay = controls.querySelector('[data-carousel-autoplay]');
+  const pauseLabel = autoplay.querySelector('[data-carousel-pause]');
+  const resumeLabel = autoplay.querySelector('[data-carousel-resume]');
+  const section = track.closest('section');
   const slides = [...track.querySelectorAll('.featured-project')];
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let paused = reducedMotion.matches;
+  let hovering = false;
+  let focused = false;
+  let touching = false;
+  let inView = !('IntersectionObserver' in window);
+  let timer;
+  const syncAutoplay = () => {
+    clearTimeout(timer);
+    pauseLabel.hidden = paused;
+    resumeLabel.hidden = !paused;
+    const running = !paused && !hovering && !focused && !touching && inView && !document.hidden && maxScroll() > 2;
+    status.setAttribute('aria-live', running ? 'off' : 'polite');
+    if (!running) return;
+    timer = setTimeout(() => {
+      if (track.scrollLeft >= maxScroll() - 2) moveTo(0);
+      else move(1);
+      syncAutoplay();
+    }, 4500);
+  };
   const maxScroll = () => Math.max(0, track.scrollWidth - track.clientWidth);
   const positions = () => slides.map(slide => Math.min(maxScroll(), slide.offsetLeft - slides[0].offsetLeft));
   const moveTo = left => track.scrollTo({ left, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
@@ -30,8 +53,35 @@
       : stops.reverse().find(left => left < track.scrollLeft - 2) ?? 0;
     moveTo(target);
   };
-  previous.addEventListener('click', () => move(-1));
-  next.addEventListener('click', () => move(1));
+  previous.addEventListener('click', () => { move(-1); syncAutoplay(); });
+  next.addEventListener('click', () => { move(1); syncAutoplay(); });
+  autoplay.addEventListener('click', () => { paused = !paused; syncAutoplay(); });
+  track.addEventListener('pointerenter', event => {
+    if (event.pointerType !== 'mouse') return;
+    hovering = true;
+    syncAutoplay();
+  });
+  track.addEventListener('pointerleave', () => { hovering = false; syncAutoplay(); });
+  track.addEventListener('pointerdown', () => { touching = true; syncAutoplay(); });
+  const releasePointer = () => { touching = false; syncAutoplay(); };
+  window.addEventListener('pointerup', releasePointer);
+  window.addEventListener('pointercancel', releasePointer);
+  section.addEventListener('focusin', event => {
+    focused = event.target !== autoplay;
+    syncAutoplay();
+  });
+  section.addEventListener('focusout', event => {
+    focused = section.contains(event.relatedTarget) && event.relatedTarget !== autoplay;
+    syncAutoplay();
+  });
+  document.addEventListener('visibilitychange', syncAutoplay);
+  reducedMotion.addEventListener('change', () => { paused = reducedMotion.matches; syncAutoplay(); });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(entries => {
+      inView = entries[0].isIntersecting && entries[0].intersectionRatio >= 0.15;
+      syncAutoplay();
+    }, { threshold: 0.15 }).observe(track);
+  }
   track.addEventListener('keydown', event => {
     if (event.target !== track) return;
     if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
@@ -43,10 +93,12 @@
   let frame;
   track.addEventListener('scroll', () => {
     if (frame) return;
-    frame = requestAnimationFrame(() => { frame = null; update(); });
+    frame = requestAnimationFrame(() => { frame = null; update(); syncAutoplay(); });
   }, { passive: true });
-  if ('ResizeObserver' in window) new ResizeObserver(update).observe(track);
-  else window.addEventListener('resize', update);
+  const resize = () => { update(); syncAutoplay(); };
+  if ('ResizeObserver' in window) new ResizeObserver(resize).observe(track);
+  else window.addEventListener('resize', resize);
   controls.hidden = false;
   update();
+  syncAutoplay();
 })();

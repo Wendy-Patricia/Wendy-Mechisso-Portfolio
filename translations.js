@@ -1578,6 +1578,16 @@ window.portfolioTranslations = [
   ]
 ];
 window.portfolioTranslations.push(
+  ["Compétences techniques", "Technical Skills"],
+  ["Technologies, outils et concepts que j’ai explorés tout au long de mon parcours.", "Technologies, tools and concepts I've explored throughout my journey."],
+  ["Développement Web & Mobile", "Web & Mobile Development"],
+  ["Infrastructure & Systèmes", "Infrastructure & Systems"],
+  ["Protection CSRF", "CSRF Protection"],
+  ["Prévention des injections SQL", "SQL Injection Prevention"],
+  ["Graphisme & 3D", "Graphics & 3D"],
+  ["Conception & Design", "Design"],
+  ["Pause", "Pause"],
+  ["Reprendre", "Resume"],
   ["Projets en vedette", "Featured projects"],
   ["Précédent", "Previous"],
   ["Suivant", "Next"],
