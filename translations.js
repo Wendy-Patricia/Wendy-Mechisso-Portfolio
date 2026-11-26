@@ -1578,6 +1578,16 @@ window.portfolioTranslations = [
   ]
 ];
 window.portfolioTranslations.push(
+  ["Les langages avec lesquels je construis.", "The languages I build with."],
+  ["Des interfaces aux services applicatifs.", "From interfaces to application services."],
+  ["Organiser, interroger et relier les données.", "Organising, querying and connecting data."],
+  ["Les outils qui font vivre les applications.", "The tools that keep applications running."],
+  ["Protéger les échanges, les accès et les données.", "Protecting communication, access and data."],
+  ["Créer et explorer des univers interactifs.", "Creating and exploring interactive worlds."],
+  ["Donner forme aux idées.", "Giving ideas a shape."],
+  ["Comprendre les images par le code.", "Understanding images through code."],
+  ["J’apprends en construisant.", "I learn by building."],
+  ["Voir ces compétences en pratique", "See these skills in practice"],
   ["Compétences techniques", "Technical Skills"],
   ["Technologies, outils et concepts que j’ai explorés tout au long de mon parcours.", "Technologies, tools and concepts I've explored throughout my journey."],
   ["Développement Web & Mobile", "Web & Mobile Development"],
