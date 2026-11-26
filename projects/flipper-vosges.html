@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Flipper Vosges - Wendy Patrícia</title>
+  <meta name="description" content="Un jeu de flipper 3D avec Unity et C#, dans un univers hivernal inspiré des Vosges, avec deux niveaux et une progression liée au score.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+      <div id="menu" class="nav-links">
+        <a href="../about.html">À propos</a>
+        <a href="../index.html#focus">Mes réalisations</a>
+        <a href="../projects.html">Projets</a>
+        <a href="../index.html#skills">Compétences</a>
+        <a href="../index.html#contact" class="nav-cta">Discutons</a>
+      </div>
+      <button class="language-toggle" type="button" lang="en" aria-label="Switch to English" title="Switch to English">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero container">
+      <a class="back" href="../projects.html">← Tous les projets</a>
+      <p class="eyebrow">Jeu 3D / Unity</p>
+      <h1>Flipper Vosges</h1>
+      <p class="case-lead">Un jeu de flipper 3D avec Unity et C#, dans un univers hivernal inspiré des Vosges, avec deux niveaux et une progression liée au score.</p>
+      <div class="tags"><span>Unity</span><span>C#</span><span>Unity Input System</span><span>Physique 3D</span><span>Level design</span></div>
+    </section>
+    <section class="case-body container">
+      <aside><p class="section-label">Étude de cas</p><span>Jeu 3D / Unity</span></aside>
+      <article>
+        <h2>Présentation</h2>
+        <p>Flipper est un jeu de flipper 3D développé avec Unity et C#, dans un univers hivernal inspiré des Vosges. Le joueur contrôle deux palettes pour maintenir la bille en jeu, toucher des cibles et accumuler des points. Le jeu comporte deux niveaux, avec une progression liée au score.</p>
+        <h2>Contexte</h2>
+        <p>Ce projet associe programmation de gameplay et création d’environnements 3D. Il reprend les mécaniques classiques du flipper dans un décor de montagne, avec des obstacles et des parcours qui renouvellent l’expérience entre les deux niveaux.</p>
+        <h2>Problématique</h2>
+        <p>Comment créer un flipper aux commandes réactives, avec une physique cohérente et une progression entre deux niveaux ? L’enjeu était de coordonner les déplacements de la bille, les collisions, le score et les vies, tout en assurant une transition qui conserve la progression du joueur.</p>
+        <h2>Ma contribution</h2>
+        <p>J’ai pris en charge l’ensemble des scripts du projet : les mécaniques de gameplay, les commandes, les interactions avec les obstacles, le score, les vies et les différents états de la partie.</p>
+        <p>J’ai également développé la logique des niveaux et le passage du niveau 1 au niveau 2, avec conservation du score et des vies restantes. Pour le deuxième niveau, j’ai réalisé à la fois la programmation et la mise en place visuelle : organisation du plateau, disposition des obstacles, intégration des rampes et composition du décor.</p>
+        <h2>Approche technique</h2>
+        <p>J’ai utilisé des scripts C# organisés en composants, chacun responsable d’un système précis : contrôle des palettes, lancement de la bille, gestion du score, des vies ou de la progression.</p>
+        <p>La physique repose sur les Rigidbody, les colliders et l’application d’impulsions. Les commandes utilisent le Unity Input System. Des événements relient les systèmes de jeu à l’interface pour actualiser les informations affichées. Lors du changement de scène, les données de la partie sont enregistrées temporairement, puis restaurées dans le deuxième niveau.</p>
+        <h2>Difficultés</h2>
+        <p>L’un des principaux défis techniques a été de coordonner la physique de la bille avec le mouvement des palettes et les réactions des obstacles. Le réglage des forces, des angles et des collisions joue un rôle essentiel dans le comportement du flipper.</p>
+        <p>Le passage entre les niveaux demandait également de gérer plusieurs éléments ensemble : interrompre le gameplay, afficher la transition, charger la scène suivante et restaurer les données. Pour le deuxième niveau, il fallait aussi concilier la composition visuelle du plateau avec l’espace nécessaire aux trajectoires de la bille.</p>
+        <h2>Résultat</h2>
+        <p>Le projet réunit les mécaniques essentielles d’un flipper 3D : lancement de la bille, contrôle des palettes, obstacles interactifs, score, vies, pause et fin de partie. La progression donne accès à un deuxième niveau qui conserve les acquis de la partie et propose un parcours distinct, avec des rampes et une ambiance visuelle dédiée.</p>
+        <h2>Ce que j’ai appris</h2>
+        <p>Ce projet m’a permis de renforcer mes compétences en C# et dans l’utilisation de Unity, notamment pour la physique, les interactions entre composants et la gestion des scènes. J’ai appris à structurer plusieurs systèmes de gameplay et à préserver les données lors d’un changement de niveau.</p>
+        <p>La réalisation technique et visuelle du deuxième niveau m’a également permis de mieux comprendre le lien entre programmation et level design : la disposition des éléments influence directement les trajectoires, la difficulté et la lisibilité du jeu.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="../index.html">Wendy <span>Patrícia</span></a>
+        <p>Étudiante en informatique · Développeuse</p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026</span>
+        <a href="#">Retour en haut ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../translations.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
